@@ -1,5 +1,8 @@
 import { useEffect } from "react"
-import { Row, Col, Container, Image } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
+
+import Bio from "../components/Home/Bio"
+import ProjectShowcase from "../components/Home/ProjectShowcase"
 
 export default function Home()
 {
@@ -7,7 +10,10 @@ export default function Home()
 
     return (<>
         <Container>
-            <Image style={{width: "10%", height: "10%"}} thumbnail src={require("../sitepfp.jpg")}/>
+            <Row>
+                <Bio />
+                <ProjectShowcase />
+            </Row>
         </Container>
     </>)
 }
