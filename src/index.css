@@ -2,3 +2,19 @@ body
 {
    background: linear-gradient(90deg, #12f006, #00aa75, #0055ee, blue);
 }
+
+.clickable
+{
+   transition: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: ease-in-out;
+
+   background: rgba(256, 256, 256, 0.0);
+}
+
+.clickable:hover
+{
+   border-radius: 5px;
+   
+   background: rgba(256, 256, 256, 0.5);
+}
