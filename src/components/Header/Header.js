@@ -1,16 +1,44 @@
-import { Link } from "react-router"
+import { useEffect, useState } from "react"
+import { Link, useLocation  } from "react-router"
 
 import "./header.css"
 
+function setClicked(pathname, link)
+{
+    if (link.to !== "/" && pathname === link.to) // not a fan of the way the box looks around the home button, but others are good
+    {
+        return "clicked"
+    }
+}
+
 export default function Header()
 {
+    const location = useLocation() // expecting object with 'pathname' as property
+
+    const [links] = useState([
+        {to: "/", content: "Elan Gabor", classNameAddon: "fs-1 fw-bold"},
+        {to: "/projects", content: "Projects", classNameAddon: ""},
+        {to: "/about", content: "About", classNameAddon: ""},
+        {to: "/contact", content: "Contact", classNameAddon: ""}
+    ])
+
+    useEffect(() => {
+        // do nothing, we want to re-render with proper indication in header as to which page the user is on
+    }, [location])
+
     return(<>
         <nav id="header" className="text-center">
             <span id="links">
-                <Link class="undecLink" to="/"><span className="fs-1 fw-bold clickable">Elan Gabor</span></Link>
-                <Link class="undecLink" to="/projects"><span className="clickable">Projects</span></Link>
-                <Link class ="undecLink" to="/about"><span className="clickable">About</span></Link>
-                <Link class="undecLink" to="/contact"><span className="clickable">Contact</span></Link>
+            {
+                links.map((link) => 
+                {
+                    return (<><Link className="undecLink" to={link.to}>
+                                <span className={link.classNameAddon + " clickable " + setClicked(location.pathname, link)}>
+                                    {link.content}
+                                </span>
+                            </Link></>)
+                })
+            }
             </span>
         </nav>
     </>)
