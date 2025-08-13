@@ -14,24 +14,42 @@
     filter: none;
 }
 
-#links span
-{
-    margin-right: 5%;
-}
-
 .undecLink
 {
     all:unset;
 }
 
-.undecLink :hover
+@keyframes hoverAnim
 {
-    background-color: rgba(256,256,256, 0.5);
+    from { background-color: rgba(256, 256, 256, 0.0); }
+    to   { background-color: rgba(256, 256, 256, 0.5); }
+}
+
+@keyframes reverseHoverAnim
+{
+    from { background-color: rgba(256, 256, 256, 0.5); }
+    to   { background-color: rgba(256, 256, 256, 0.0); }
+}
+
+#links span
+{
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+
+    background: rgba(256, 256, 256, 0.0);
+
+    text-align: center;
+    cursor: pointer;
+
+    padding: 1%;
+    margin-right: 5%;
+
     border-radius: 5px;
 }
 
-.undecLink span
+
+#links span:hover
 {
-    text-align: center;
-    cursor: pointer;
+    background: rgba(256, 256, 256, 0.5);
 }
