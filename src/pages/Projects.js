@@ -1,9 +1,15 @@
+import { useEffect } from "react"
 import { Outlet } from "react-router";
+import { Row, Col, Container } from "react-bootstrap"
 
 export default function Projects()
 {
+    useEffect(() => {document.title = "EG | Projects"})
+
     return(<>
-        <h1>Projects</h1>
-        <Outlet />
+        <Container>
+            <h2>Projects</h2>
+            <Outlet />
+        </Container>
     </>)
 }

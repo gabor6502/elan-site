@@ -1,0 +1,27 @@
+#header
+{
+    background: linear-gradient(#00aa11, #0099ff);
+    padding-bottom: 5px;
+}
+
+#links span
+{
+    margin-right: 5%;
+}
+
+.undecLink
+{
+    all:unset;
+}
+
+.undecLink :hover
+{
+    background-color: rgba(256,256,256, 0.5);
+    border-radius: 5px;
+}
+
+.undecLink span
+{
+    text-align: center;
+    cursor: pointer;
+}

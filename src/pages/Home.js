@@ -1,7 +1,13 @@
+import { useEffect } from "react"
+import { Row, Col, Container } from "react-bootstrap"
 
 export default function Home()
 {
+    useEffect(() => {document.title = "Elan Gabor"})
+
     return (<>
-        <h1>Home</h1>
+        <Container>
+            <h2>Home</h2>
+        </Container>
     </>)
 }

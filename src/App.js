@@ -1,7 +1,7 @@
 import { BrowserRouter as Router } from "react-router"
 
-import Header from "./components/Header"
-import HeaderRoutes from "./components/HeaderRoutes"
+import Header from "./components/Header/Header"
+import HeaderRoutes from "./components/Header/HeaderRoutes"
 
 export default function App()
 {
