@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { Row, Col, Container } from "react-bootstrap"
+import { Row, Container } from "react-bootstrap"
 
 import Bio from "../components/Home/Bio"
 import ProjectShowcase from "../components/Home/ProjectShowcase"
