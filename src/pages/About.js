@@ -7,7 +7,7 @@ export default function About()
     useEffect(() => {document.title = "EG | About"})
 
     return(<>
-        <Container>
+        <Container className="card">
             <h2>About</h2>
             <Outlet />
         </Container>
