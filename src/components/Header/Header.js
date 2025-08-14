@@ -4,11 +4,6 @@ import { Image } from "react-bootstrap"
 
 import "./header.css"
 
-function openLinkedInProfile()
-{
-    window.open("https://www.linkedin.com/in/elan-gabor/", "_blank", "noopener,noreferrer")
-}
-
 function setClicked(pathname, link)
 {
     if (link.to !== "/" && pathname === link.to) // not a fan of the way the box looks around the home button, but others are good
@@ -19,6 +14,8 @@ function setClicked(pathname, link)
 
 export default function Header()
 {
+    const openLinkedInProfile = () => { window.open("https://www.linkedin.com/in/elan-gabor/", "_blank", "noopener,noreferrer") }
+
     const location = useLocation() // expecting object with 'pathname' as property
 
     const [links] = useState([
