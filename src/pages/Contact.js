@@ -9,11 +9,13 @@ export default function Contact()
 
     return(<>
         <Container className="card">
-            <span className="fs-1 fw-bold">Hmu!</span>
             <Row>
+                <span className="fs-1 fw-bold">Hmu!</span>
                 <p>Want to reach out to discuss emploment or freelance opportunities, my projects, or just shoot the breeze? Feel free to contact me below:</p>
             </Row>
+
             <ContactForm />
+
             <Outlet />
         </Container>
     </>)

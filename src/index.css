@@ -23,7 +23,7 @@ body
 .card
 {
    margin-top: 5px;
-   margin-bottom: 5px;
+   margin-bottom: 10px;
 
    background: rgba(256,256,256, 0.5);
    backdrop-filter: blur(2px);
