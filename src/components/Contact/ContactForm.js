@@ -4,6 +4,9 @@ import WordCountTextarea from "./WordCountTextarea"
 
 const emailRegex = /[\w\-\.\_]+@([\w]+\.)+[\w-]{2,}/
 
+// TODO: email regex validation
+//       setup mailto when form data valid
+
 export default function ContactForm()
 {
     const [validated, setValidated] = useState(false)
@@ -41,9 +44,7 @@ export default function ContactForm()
                         <Form.Label>Email</Form.Label>
                         <InputGroup>
                             <InputGroup.Text>@</InputGroup.Text>
-                            <Form.Control required type="text" className="rounded-end" 
-                                pattern="^[\w\-\.\_]+@([\w]+\.)+[\w-]{2,}$"
-                                isInvalid={""} />
+                            <Form.Control required type="text" className="rounded-end" />
                             <Form.Control.Feedback type="invalid">Please enter your email.</Form.Control.Feedback>
                         </InputGroup>
                     </Form.Group>

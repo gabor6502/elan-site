@@ -1,10 +1,42 @@
 [
     {
         "name":"", 
-        "previewImagePath": "", 
+        "galleryImages": [],
         "github": "",
         "description:": "",
         "techStack": [],
         "wip": true
+    },
+    {
+        "name":"Fractal Viewer V2", 
+        "galleryImages": 
+            [
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv1.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv2.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv3.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv4.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv5.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv6.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv7.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv8.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv9.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv10.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv11.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv12.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv13.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv14.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv15.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv16.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv17.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv18.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv19.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv20.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv21.png",
+                "/src/resources/pictures/projectPics/FractalViewerV2/fracv22.png"
+            ],
+        "github": "https://github.com/gabor6502/Fractal-Generator",
+        "description:": "Make sure to add a description!",
+        "techStack": ["Java", "JOGL"],
+        "wip": false
     }
 ]
