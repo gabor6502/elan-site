@@ -19,7 +19,7 @@ export default function ContactForm()
     }
 
     return(<>
-        <Row>
+        <Row className="p-2">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Row>
                     <Form.Group as={Col} controlId="firstName">
@@ -38,26 +38,19 @@ export default function ContactForm()
                         <Form.Label>Email</Form.Label>
                         <InputGroup>
                             <InputGroup.Text>@</InputGroup.Text>
-                            <Form.Control required type="text" />
+                            <Form.Control required type="text" className="rounded-end" />
                             <Form.Control.Feedback type="invalid">Please enter your email.</Form.Control.Feedback>
                         </InputGroup>
                     </Form.Group>
                 </Row>
-                <Row>
-                    <Form.Group as={Col} controlId="subject">
-                        <Form.Label>Subject</Form.Label>
-                        <Form.Control required type="text" />
-                        <Form.Control.Feedback type="invalid">A message subject is required.</Form.Control.Feedback>
-                    </Form.Group>
-                </Row>
-                <Row>
+                <Row className="mt-2">
                     <Form.Group as={Col} controlId="message">
                         <Form.Label>Message</Form.Label>
                         <Form.Control required as="textarea" rows={5} />
                         <Form.Control.Feedback type="invalid">A message is required.</Form.Control.Feedback>
                     </Form.Group>
                 </Row>
-                <Button type="submit">Send</Button>
+                <Button type="submit" className="mt-3">Send</Button>
             </Form>
         </Row>
     </>)

@@ -38,8 +38,8 @@ body
    background: rgba(256,256,256, 0.5);
    backdrop-filter: blur(2px);
 
-   position: absolute;
-   bottom: 0;
+   position: fixed;
+   bottom: 0%;
 
    font-size: x-small;
    padding: 3px;
