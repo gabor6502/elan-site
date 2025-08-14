@@ -8,12 +8,12 @@ export default function Contact()
 
     return(<>
         <Container className="card">
-            <span className="fs-1 fw-bold">Hmu!</span>
+            <span className="fs-1 fw-bold">HMU</span>
             <Row>
-                <p>Want to reach out to discuss emploment or freelance opportunities, my projects, or just shoot the breeze?</p>
+                <p>Want to reach out to discuss emploment or freelance opportunities, my projects, or just shoot the breeze? Feel free to contact me below!</p>
             </Row>
             <Row>
-
+                
             </Row>
             <Outlet />
         </Container>
