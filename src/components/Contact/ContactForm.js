@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button } from "react-bootstrap"
+import WordCountTextarea from "./WordCountTextarea"
 
 export default function ContactForm()
 {
@@ -44,13 +45,9 @@ export default function ContactForm()
                     </Form.Group>
                 </Row>
                 <Row className="mt-2">
-                    <Form.Group as={Col} controlId="message">
-                        <Form.Label>Message</Form.Label>
-                        <Form.Control required as="textarea" rows={5} />
-                        <Form.Control.Feedback type="invalid">A message is required.</Form.Control.Feedback>
-                    </Form.Group>
+                    <WordCountTextarea max={500}/>
                 </Row>
-                <Button type="submit" className="mt-3">Send</Button>
+                <Button type="submit" className="mt-2" variant="success">Send</Button>
             </Form>
         </Row>
     </>)
