@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react"
 import { Link, useLocation  } from "react-router"
+import { Image } from "react-bootstrap"
 
 import "./header.css"
+
+function openLinkedInProfile()
+{
+    window.open("https://www.linkedin.com/in/elan-gabor/", "_blank", "noopener,noreferrer")
+}
 
 function setClicked(pathname, link)
 {
@@ -23,11 +29,12 @@ export default function Header()
     ])
 
     useEffect(() => {
-        // do nothing, we want to re-render with proper indication in header as to which page the user is on
+        // do nothing, we want to re-render with proper indication in the header as to which page the user is on
     }, [location])
 
     return(<>
         <nav id="header" className="text-center">
+
             <span id="links">
             {
                 links.map((link) => 
@@ -40,6 +47,9 @@ export default function Header()
                 })
             }
             </span>
+
+            <Image id="linkedIn" rounded src={require("../../resources/pictures/linkedinIcon.ico")} onClick={openLinkedInProfile} title="Open LinkedIn profile" alt="LinkedIn logo" />
         </nav>
+
     </>)
 }

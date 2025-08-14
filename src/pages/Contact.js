@@ -7,8 +7,14 @@ export default function Contact()
     useEffect(() => {document.title = "EG | Contact"})
 
     return(<>
-        <Container>
-            <h2>Contact</h2>
+        <Container className="card">
+            <span className="fs-1 fw-bold">Hmu!</span>
+            <Row>
+                <p>Want to reach out to discuss emploment or freelance opportunities, my projects, or just shoot the breeze?</p>
+            </Row>
+            <Row>
+
+            </Row>
             <Outlet />
         </Container>
     </>)

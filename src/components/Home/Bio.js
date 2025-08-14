@@ -6,7 +6,7 @@ export default function Bio()
         <Container className="card">
                 <Row>
                     <Col>
-                        <Image rounded style={{width: 200, height: 200}} src={require("../../resources/pictures/sitepfp.jpg")}/>
+                        <Image rounded style={{width: 200, height: 200}} src={require("../../resources/pictures/sitepfp.jpg")} alt="A picture of me"/>
                     </Col>
                 </Row>
         </Container>
