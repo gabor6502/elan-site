@@ -2,8 +2,7 @@ import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button } from "react-bootstrap"
 import WordCountTextarea from "./WordCountTextarea"
 
-const emailRegex = /[\w\-\.\_]+@([\w]+\.)+[\w-]{2,}/
-
+//const emailRegex = /[\w\-\.\_]+@([\w]+\.)+[\w-]{2,}/
 // TODO: email regex validation
 //       setup mailto when form data valid
 

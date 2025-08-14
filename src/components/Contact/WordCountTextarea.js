@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Col, Form } from "react-bootstrap"
 
 export default function WordCountTextarea({max})

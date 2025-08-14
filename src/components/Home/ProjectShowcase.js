@@ -1,4 +1,5 @@
-import { Row, Col, Container, Image } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
+import ProjectPreviewCard from "../Projects/ProjectPreviewCard"
 
 export default function ProjectShowcase()
 {
@@ -6,7 +7,7 @@ export default function ProjectShowcase()
         <Container className="card">
             <Row>
                 <Col>
-                    <p>Project showcase</p>
+                    <ProjectPreviewCard index={0} />
                 </Col>
             </Row>
         </Container>

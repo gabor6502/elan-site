@@ -1,13 +1,5 @@
 [
     {
-        "name":"", 
-        "galleryImages": [],
-        "github": "",
-        "description:": "",
-        "techStack": [],
-        "wip": true
-    },
-    {
         "name":"Fractal Viewer V2", 
         "galleryImages": 
             [
@@ -38,5 +30,13 @@
         "description:": "Make sure to add a description!",
         "techStack": ["Java", "JOGL"],
         "wip": false
+    },
+    {
+        "name":"", 
+        "galleryImages": [],
+        "github": "",
+        "description:": "",
+        "techStack": [],
+        "wip": true
     }
 ]
