@@ -1,6 +1,8 @@
 import { create } from 'zustand'
 const fs = require("fs");
 
+// TODO: read json file!!!
+
 const useStore = create((set, get) => ({
 
     projects: JSON.parse(fs.readFileSync("../../resources/projects.json")),
