@@ -15,6 +15,7 @@ function setClicked(pathname, link)
 export default function Header()
 {
     const openLinkedInProfile = () => { window.open("https://www.linkedin.com/in/elan-gabor/", "_blank", "noopener,noreferrer") }
+    const openGitHubProfile = () => { window.open("https://github.com/gabor6502/", "_blank", "noopener,noreferrer") }
 
     const location = useLocation() // expecting object with 'pathname' as property
 
@@ -46,6 +47,7 @@ export default function Header()
             </span>
 
             <Image id="linkedIn" rounded src={require("../../resources/pictures/linkedinIcon.ico")} onClick={openLinkedInProfile} title="Open LinkedIn profile" alt="LinkedIn logo" />
+            <Image id="GitHub" rounded src={require("../../resources/pictures/githubIcon.ico")} onClick={openGitHubProfile} title="Open GitHub profile" alt="GitHub logo" />
         </nav>
 
     </>)

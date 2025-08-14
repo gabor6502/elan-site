@@ -37,12 +37,19 @@
 
 #linkedIn
 {
+    margin-right: 15px;
+}
+
+#GitHub,
+#linkedIn
+{
    width: 25px;
    height: 25px;
 
    margin-bottom: 5px;
 }
 
+#GitHub:hover,
 #linkedIn:hover
 {
     cursor: pointer;
