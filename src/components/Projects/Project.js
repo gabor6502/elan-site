@@ -17,7 +17,10 @@ export default function Project({project})
                     </Col>
                 </Row>
                 <Row className="d-inline-flex">
-                    <Image />
+                    <Col>
+                    <span>{project.description}</span>
+                    </Col>
+                    
                 </Row>
             </Container> 
         </>)

@@ -27,42 +27,53 @@
                 "/src/resources/pictures/projectPics/FractalViewerV2/fracv22.png"
             ],
         "github": "https://github.com/gabor6502/Fractal-Generator",
-        "description:": "Make sure to add a description!",
+        "description": "Make sure to add a description!",
         "techStack": ["Java", "JOGL"]
     },
     {
         "name":"Collections", 
         "galleryImages": [],
         "github": "",
-        "description:": "Make sure to add a description!",
+        "description": "Make sure to add a description!",
         "techStack": ["React", "Spring", "Junit", "PostgreSQL"]
     },
     {
         "name":"DogSpinnerX", 
         "galleryImages": [],
         "github": "",
-        "description:": "Make sure to add a description!",
+        "description": "Make sure to add a description!",
         "techStack": ["Angular", "Node", "Jest", "Typeorm", "PostgreSQL"]
     },
     {
         "name":"Daemon", 
-        "galleryImages": [],
+        "galleryImages": 
+            [
+                "/src/resources/pictures/projectPics/Daemon/daemon-curl.png"
+            ],
         "github": "",
-        "description:": "Make sure to add a description!",
+        "description": "Make sure to add a description!",
         "techStack": ["C", "Linux"]
     },
     {
         "name":"CUDA Fractal 2D", 
-        "galleryImages": [],
+        "galleryImages": 
+            [
+                
+            ],
         "github": "",
-        "description:": "Make sure to add a description!",
+        "description": "Make sure to add a description!",
         "techStack": ["Cpp", "CUDA", "Opengl"]
     },
     {
         "name":"BF Interpreter", 
-        "galleryImages": ["/src/resources/pictures/projectPics/BF/bfcode.png"],
+        "galleryImages": 
+            [
+                "/src/resources/pictures/projectPics/BF/bfcode.png",
+                "/src/resources/pictures/projectPics/BF/bf-runproc.png",
+                "/src/resources/pictures/projectPics/BF/bf-terminal.png"
+            ],
         "github": "",
-        "description:": "Make sure to add a description!",
+        "description": "Make sure to add a description!",
         "techStack": ["C"]
     }
 ]
