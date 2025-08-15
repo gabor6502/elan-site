@@ -64,3 +64,12 @@ body
 {
    accent-color: green;
 }
+
+.techIconBadge
+{
+   max-width: 35px;
+   max-height: 35px;
+
+   margin-right: 5px;
+   margin-left: 5px;
+}

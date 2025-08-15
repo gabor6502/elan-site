@@ -1,17 +1,19 @@
 import {useState} from "react"
 import { Row, Col, Container } from "react-bootstrap"
 import ProjectPreviewCard from "../Projects/ProjectPreviewCard"
+import useStore from "../Projects/ProjectsStore"
 
 export default function ProjectShowcase()
 {
     const MAX_SHOWCASE = 5
     const [currProject, setCurrProject] = useState(0)
+    const { getProject } = useStore()
 
     return(<>
         <Container className="card">
             <Row>
                 <Col>
-                    <ProjectPreviewCard index={0} />
+                    <ProjectPreviewCard project={getProject(currProject)} />
                 </Col>
             </Row>
             <Row>

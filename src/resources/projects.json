@@ -28,55 +28,41 @@
             ],
         "github": "https://github.com/gabor6502/Fractal-Generator",
         "description:": "Make sure to add a description!",
-        "techStack": ["Java", "JOGL"],
-        "wip": false
+        "techStack": ["Java", "JOGL"]
     },
     {
         "name":"Collections", 
         "galleryImages": [],
         "github": "",
-        "description:": "",
-        "techStack": [],
-        "wip": true
+        "description:": "Make sure to add a description!",
+        "techStack": ["React", "Spring", "Junit", "PostgreSQL"]
     },
     {
         "name":"DogSpinnerX", 
         "galleryImages": [],
         "github": "",
-        "description:": "",
-        "techStack": [],
-        "wip": true
+        "description:": "Make sure to add a description!",
+        "techStack": ["Angular", "Node", "Jest", "Typeorm", "PostgreSQL"]
     },
     {
         "name":"Daemon", 
         "galleryImages": [],
         "github": "",
-        "description:": "",
-        "techStack": [],
-        "wip": true
+        "description:": "Make sure to add a description!",
+        "techStack": ["C", "Linux"]
     },
     {
         "name":"CUDA Fractal 2D", 
         "galleryImages": [],
         "github": "",
-        "description:": "",
-        "techStack": [],
-        "wip": true
+        "description:": "Make sure to add a description!",
+        "techStack": ["Cpp", "CUDA", "Opengl"]
     },
     {
         "name":"BF Interpreter", 
-        "galleryImages": [],
+        "galleryImages": ["/src/resources/pictures/projectPics/BF/bfcode.png"],
         "github": "",
-        "description:": "",
-        "techStack": [],
-        "wip": true
-    },
-    {
-        "name":"", 
-        "galleryImages": [],
-        "github": "",
-        "description:": "",
-        "techStack": [],
-        "wip": true
+        "description:": "Make sure to add a description!",
+        "techStack": ["C"]
     }
 ]
