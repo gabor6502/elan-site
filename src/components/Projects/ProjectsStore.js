@@ -1,13 +1,27 @@
 import { create } from 'zustand'
-const fs = require("fs");
 
-// TODO: read json file!!!
+import json from "../../resources/projects.json"
+
+class ProjectOutOfBoundsError extends Error
+{
+    constructor(index)
+    {
+        super(`Index ${index} out of bounds in projects file`)
+    }
+}
 
 const useStore = create((set, get) => ({
 
-    projects: JSON.parse(fs.readFileSync("../../resources/projects.json")),
-    
-    getProject: (i) => get(projects[i]) // i out of bounds will be undefined
+    projects: json,
+    getProject: (i) => 
+        {
+            if (i >= get().projects.length || i < 0)
+            {
+                throw new ProjectOutOfBoundsError(i);
+            }
+
+            return get().projects[i]
+        }
 
 }))
 

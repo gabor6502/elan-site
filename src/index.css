@@ -46,3 +46,21 @@ body
 
    border-top-right-radius: 10px;
 }
+
+#projectPreviewButtons
+{
+   text-align: center;
+}
+
+#projectPreviewButtons input[type="radio"]
+{
+   margin-left: 2px;
+   margin-right: 2px;
+
+
+}
+
+#projectPreviewButtons input[type="radio"]:checked
+{
+   accent-color: green;
+}

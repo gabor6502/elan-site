@@ -32,6 +32,46 @@
         "wip": false
     },
     {
+        "name":"Collections", 
+        "galleryImages": [],
+        "github": "",
+        "description:": "",
+        "techStack": [],
+        "wip": true
+    },
+    {
+        "name":"DogSpinnerX", 
+        "galleryImages": [],
+        "github": "",
+        "description:": "",
+        "techStack": [],
+        "wip": true
+    },
+    {
+        "name":"Daemon", 
+        "galleryImages": [],
+        "github": "",
+        "description:": "",
+        "techStack": [],
+        "wip": true
+    },
+    {
+        "name":"CUDA Fractal 2D", 
+        "galleryImages": [],
+        "github": "",
+        "description:": "",
+        "techStack": [],
+        "wip": true
+    },
+    {
+        "name":"BF Interpreter", 
+        "galleryImages": [],
+        "github": "",
+        "description:": "",
+        "techStack": [],
+        "wip": true
+    },
+    {
         "name":"", 
         "galleryImages": [],
         "github": "",
