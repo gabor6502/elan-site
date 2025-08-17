@@ -21,6 +21,11 @@ export default function Project({project})
                     <span>{project.headline}</span>
                     </Col>
                 </Row>
+                <Row>
+                    <Col>
+                        <Image src={require(`${project.galleryImages[0]}`)} alt={project.name+"0"}/>
+                    </Col>
+                </Row>
             </Container> 
         </>)
 }

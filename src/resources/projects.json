@@ -32,14 +32,21 @@
     },
     {
         "name":"Collections", 
-        "galleryImages": [],
+        "galleryImages": 
+            [
+                "src/resources/pictures/projectPics/temp.jpg"
+            ],
         "github": "",
         "headline": "Make sure to add a headline!",
         "techStack": ["React", "Spring", "Junit", "PostgreSQL"]
     },
     {
         "name":"DogSpinnerX", 
-        "galleryImages": [],
+        "galleryImages": 
+            [
+                "/src/resources/pictures/projectPics/Dogsng/dogcenter.png",
+                "/src/resources/pictures/projectPics/Dogsng/dogscores.png"
+            ],
         "github": "",
         "headline": "Make sure to add a headline!",
         "techStack": ["Angular", "Node", "Jest", "Typeorm", "PostgreSQL"]
@@ -58,7 +65,7 @@
         "name":"CUDA Fractal 2D", 
         "galleryImages": 
             [
-                
+                "src/resources/pictures/projectPics/temp.jpg"
             ],
         "github": "",
         "headline": "Make sure to add a headline!",
