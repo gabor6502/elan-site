@@ -23,9 +23,10 @@ export default function Project({project})
                 </Row>
                 <Row>
                     <Col>
-                        <Image src={require(`${project.galleryImages[0]}`)} alt={project.name+"0"}/>
+                        <Image className="projImg" src={require(`../../resources/pictures/projectPics/${project.galleryImages[0]}`)} alt={project.name+"0"}/>
                     </Col>
                 </Row>
+                
             </Container> 
         </>)
 }

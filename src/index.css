@@ -80,10 +80,17 @@ body
 {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
+   /*grid-template-rows: repeat(2, 2fr);*/
    gap: 10px;
 }
 
 .badgeRow
 {
    float :right;
+}
+
+.projImg
+{
+   max-width: 100px;
+   max-height: 100px;
 }

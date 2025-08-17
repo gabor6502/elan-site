@@ -3,28 +3,28 @@
         "name":"Fractal Viewer V2", 
         "galleryImages": 
             [
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv1.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv2.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv3.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv4.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv5.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv6.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv7.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv8.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv9.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv10.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv11.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv12.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv13.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv14.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv15.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv16.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv17.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv18.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv19.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv20.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv21.png",
-                "/src/resources/pictures/projectPics/FractalViewerV2/fracv22.png"
+                "FractalViewerV2/fracv1.png",
+                "FractalViewerV2/fracv2.png",
+                "FractalViewerV2/fracv3.png",
+                "FractalViewerV2/fracv4.png",
+                "FractalViewerV2/fracv5.png",
+                "FractalViewerV2/fracv6.png",
+                "FractalViewerV2/fracv7.png",
+                "FractalViewerV2/fracv8.png",
+                "FractalViewerV2/fracv9.png",
+                "FractalViewerV2/fracv10.png",
+                "FractalViewerV2/fracv11.png",
+                "FractalViewerV2/fracv12.png",
+                "FractalViewerV2/fracv13.png",
+                "FractalViewerV2/fracv14.png",
+                "FractalViewerV2/fracv15.png",
+                "FractalViewerV2/fracv16.png",
+                "FractalViewerV2/fracv17.png",
+                "FractalViewerV2/fracv18.png",
+                "FractalViewerV2/fracv19.png",
+                "FractalViewerV2/fracv20.png",
+                "FractalViewerV2/fracv21.png",
+                "FractalViewerV2/fracv22.png"
             ],
         "github": "https://github.com/gabor6502/Fractal-Generator",
         "headline": "Make sure to add a headline!",
@@ -34,7 +34,7 @@
         "name":"Collections", 
         "galleryImages": 
             [
-                "src/resources/pictures/projectPics/temp.jpg"
+                "temp.jpg"
             ],
         "github": "",
         "headline": "Make sure to add a headline!",
@@ -44,8 +44,8 @@
         "name":"DogSpinnerX", 
         "galleryImages": 
             [
-                "/src/resources/pictures/projectPics/Dogsng/dogcenter.png",
-                "/src/resources/pictures/projectPics/Dogsng/dogscores.png"
+                "Dogsng/dogcenter.png",
+                "Dogsng/dogscores.png"
             ],
         "github": "",
         "headline": "Make sure to add a headline!",
@@ -55,7 +55,7 @@
         "name":"Daemon", 
         "galleryImages": 
             [
-                "/src/resources/pictures/projectPics/Daemon/daemon-curl.png"
+                "Daemon/daemon-curl.png"
             ],
         "github": "",
         "headline": "Make sure to add a headline!",
@@ -65,7 +65,7 @@
         "name":"CUDA Fractal 2D", 
         "galleryImages": 
             [
-                "src/resources/pictures/projectPics/temp.jpg"
+                "temp.jpg"
             ],
         "github": "",
         "headline": "Make sure to add a headline!",
@@ -75,9 +75,9 @@
         "name":"BF Interpreter", 
         "galleryImages": 
             [
-                "/src/resources/pictures/projectPics/BF/bfcode.png",
-                "/src/resources/pictures/projectPics/BF/bf-runproc.png",
-                "/src/resources/pictures/projectPics/BF/bf-terminal.png"
+                "BF/bfcode.png",
+                "BF/bf-runproc.png",
+                "BF/bf-terminal.png"
             ],
         "github": "",
         "headline": "Make sure to add a headline!",
