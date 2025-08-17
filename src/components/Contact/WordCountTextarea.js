@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Col, Form } from "react-bootstrap"
 
-export default function WordCountTextarea({max})
+export default function WordCountTextarea({max, ctrlId})
 {
     const [wordCount, setWordCount] = useState(0)
     const [content, setContent] = useState("")
@@ -21,7 +21,7 @@ export default function WordCountTextarea({max})
     }
 
     return (<>
-        <Form.Group as={Col} controlId="message">
+        <Form.Group as={Col} controlId={ctrlId}>
             <Form.Label>Message</Form.Label>
             <Form.Control required as="textarea" rows={6} value={content} onChange={(event) => contentChange(event.target.value)} style={{resize:"none"}}/>
             <Form.Control.Feedback type="invalid">A message is required.</Form.Control.Feedback>
