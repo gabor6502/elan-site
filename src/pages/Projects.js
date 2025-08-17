@@ -14,11 +14,14 @@ export default function Projects()
     return(<>
         <Container className="card">
             <span className="fs-1 fw-bold">Projects</span>
-            {
-                getProjects().map((project) => {
-                    return <Project project={project} />
-                })
-            }
+            <span id="projectsGrid"> 
+                {
+                    getProjects().map((project) => {
+                        return <Project project={project} />
+                    })
+                }
+            </span>
+            
             <Outlet />
         </Container>
     </>)

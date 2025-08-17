@@ -72,4 +72,18 @@ body
 
    margin-right: 5px;
    margin-left: 5px;
+
+   margin-bottom: 8px;
+}
+
+#projectsGrid
+{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+}
+
+.badgeRow
+{
+   float :right;
 }

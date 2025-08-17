@@ -27,21 +27,21 @@
                 "/src/resources/pictures/projectPics/FractalViewerV2/fracv22.png"
             ],
         "github": "https://github.com/gabor6502/Fractal-Generator",
-        "description": "Make sure to add a description!",
+        "headline": "Make sure to add a headline!",
         "techStack": ["Java", "JOGL"]
     },
     {
         "name":"Collections", 
         "galleryImages": [],
         "github": "",
-        "description": "Make sure to add a description!",
+        "headline": "Make sure to add a headline!",
         "techStack": ["React", "Spring", "Junit", "PostgreSQL"]
     },
     {
         "name":"DogSpinnerX", 
         "galleryImages": [],
         "github": "",
-        "description": "Make sure to add a description!",
+        "headline": "Make sure to add a headline!",
         "techStack": ["Angular", "Node", "Jest", "Typeorm", "PostgreSQL"]
     },
     {
@@ -51,7 +51,7 @@
                 "/src/resources/pictures/projectPics/Daemon/daemon-curl.png"
             ],
         "github": "",
-        "description": "Make sure to add a description!",
+        "headline": "Make sure to add a headline!",
         "techStack": ["C", "Linux"]
     },
     {
@@ -61,7 +61,7 @@
                 
             ],
         "github": "",
-        "description": "Make sure to add a description!",
+        "headline": "Make sure to add a headline!",
         "techStack": ["Cpp", "CUDA", "Opengl"]
     },
     {
@@ -73,7 +73,7 @@
                 "/src/resources/pictures/projectPics/BF/bf-terminal.png"
             ],
         "github": "",
-        "description": "Make sure to add a description!",
+        "headline": "Make sure to add a headline!",
         "techStack": ["C"]
     }
 ]

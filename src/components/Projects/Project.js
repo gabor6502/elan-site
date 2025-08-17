@@ -7,20 +7,19 @@ export default function Project({project})
         <>
             <Container className="card">
                 <Row>
-                    <Col xs={2}> 
-                        <span className={"fs-5 fst-italic fw-bold"}>{project.name}</span>
-                    </Col>
-                    <Col>
-                        {
-                        project.techStack.map((techname) => {return <TechIconBadge name={techname}/>})
-                        }
-                    </Col>
+                    <span>
+                        <span className="fs-3 fst-italic fw-bold">{project.name}</span>
+                        <span className="badgeRow">
+                            {
+                            project.techStack.map((techname) => {return <TechIconBadge name={techname}/>})
+                            }
+                        </span>
+                    </span>
                 </Row>
-                <Row className="d-inline-flex">
+                <Row>
                     <Col>
-                    <span>{project.description}</span>
+                    <span>{project.headline}</span>
                     </Col>
-                    
                 </Row>
             </Container> 
         </>)
