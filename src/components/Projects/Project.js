@@ -1,8 +1,16 @@
-import { Row, Col, Container, Image } from "react-bootstrap"
+import { useState } from "react"
+import { Row, Col, Container, Image, Button } from "react-bootstrap"
 import TechIconBadge from "./TechIconBadge"
 
 export default function Project({project})
 {
+
+    const [viewMore, setViewMore] = useState(false)
+
+    const toggleView = () => {
+        setViewMore(!viewMore)
+    }
+
     return (
         <>
             <Container className="card">
@@ -21,10 +29,19 @@ export default function Project({project})
                     <span>{project.headline}</span>
                     </Col>
                 </Row>
+                {
+                    viewMore ?
+                    <Row>
+                        <Col>
+                            <Image className="projImg" src={require(`../../resources/pictures/projectPics/${project.galleryImages[0]}`)} alt={project.name+"0"}/> 
+                        </Col>
+                    </Row> 
+                    
+                    : null
+                }
+
                 <Row>
-                    <Col>
-                        <Image className="projImg" src={require(`../../resources/pictures/projectPics/${project.galleryImages[0]}`)} alt={project.name+"0"}/>
-                    </Col>
+                    <Button onClick={toggleView} className="mt-2" variant="success">Reveal...</Button>
                 </Row>
                 
             </Container> 
