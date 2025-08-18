@@ -41,13 +41,13 @@ export default function ContactForm()
                 <Row>
                     <Form.Group as={Col} controlId={FNAME_ID}>
                         <Form.Label>First Name</Form.Label>
-                        <Form.Control required type="text" />
+                        <Form.Control required type="text" pattern="[\w\-]+" placeholder="Enter your first name"/>
                         <Form.Control.Feedback type="invalid">Please enter your first name.</Form.Control.Feedback>
                     </Form.Group>
 
                     <Form.Group as={Col} controlId={LNAME_ID}>
                         <Form.Label>Last Name</Form.Label>
-                        <Form.Control required type="text" />
+                        <Form.Control required type="text" pattern="[\w\-]+" placeholder="Enter your last name"/>
                         <Form.Control.Feedback type="invalid">Please enter your last name.</Form.Control.Feedback>
                     </Form.Group>
 
@@ -55,7 +55,7 @@ export default function ContactForm()
                         <Form.Label>Email</Form.Label>
                         <InputGroup>
                             <InputGroup.Text>@</InputGroup.Text>
-                            <Form.Control required type="text" className="rounded-end" pattern="[\w\-\.]+[@]([\w]+\.)+[\w\-]{2,}" />
+                            <Form.Control required type="text" className="rounded-end" pattern="[\w\-\.]+[@]([\w]+\.)+[\w\-]{2,}" placeholder="me@example.com"/>
                             <Form.Control.Feedback type="invalid">Please enter your email.</Form.Control.Feedback>
                         </InputGroup>
                     </Form.Group>

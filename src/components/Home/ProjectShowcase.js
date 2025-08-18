@@ -1,19 +1,16 @@
-import {useState} from "react"
 import { Row, Col, Container } from "react-bootstrap"
-import ProjectPreviewCard from "../Projects/ProjectPreviewCard"
-import useStore from "../Projects/ProjectsStore"
 
 export default function ProjectShowcase()
 {
-    const MAX_SHOWCASE = 5
-    const [currProject, setCurrProject] = useState(0)
-    const { getProject } = useStore()
 
     return(<>
         <Container className="card">
             <Row>
+                <span className="fs-3 fw-bold">Fractal Generator</span>
+            </Row>
+            <Row className="card">
                 <Col>
-                    <ProjectPreviewCard project={getProject(currProject)} />
+                   put small image panels here
                 </Col>
             </Row>
             <Row>
@@ -24,7 +21,6 @@ export default function ProjectShowcase()
                     <input type="radio" name="projButtons"/>
                     <input type="radio" name="projButtons"/>
                 </span>
-                
             </Row>
         </Container>
     </>)

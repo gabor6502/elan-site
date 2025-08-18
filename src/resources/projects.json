@@ -3,36 +3,42 @@
         "name":"Fractal Viewer V2", 
         "github": ["https://github.com/gabor6502/Fractal-Generator"],
         "headline": "Make sure to add a headline!",
+        "description": "Make sure to add a description!",
         "techStack": ["Java", "JOGL"]
     },
     {
         "name":"Collections",
         "github": ["https://github.com/gabor6502/collections_spring_backend"],
         "headline": "Make sure to add a headline!",
+        "description": "Make sure to add a description!",
         "techStack": ["React", "Spring", "Junit", "PostgreSQL"]
     },
     {
         "name":"DogSpinnerX",
         "github": ["https://github.com/gabor6502/dogs-ng", "https://github.com/gabor6502/highscores-backend"],
         "headline": "Make sure to add a headline!",
+        "description": "Make sure to add a description!",
         "techStack": ["Angular", "Node", "Jest", "Typeorm", "PostgreSQL"]
     },
     {
         "name":"Daemon",
         "github": ["https://github.com/gabor6502/daemon-helper"],
         "headline": "Make sure to add a headline!",
+        "description": "Make sure to add a description!",
         "techStack": ["C", "Linux"]
     },
     {
         "name":"CUDA Fractal 2D",
         "github": ["https://github.com/gabor6502/cuda_fractal_2d"],
         "headline": "Make sure to add a headline!",
+        "description": "Make sure to add a description!",
         "techStack": ["Cpp", "CUDA", "Opengl"]
     },
     {
         "name":"BF Interpreter",
         "github": ["https://github.com/gabor6502/bf"],
         "headline": "Make sure to add a headline!",
+        "description": "Make sure to add a description!",
         "techStack": ["C"]
     }
 ]
