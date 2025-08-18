@@ -5,8 +5,7 @@ import json from "../../resources/projects.json"
 const useStore = create((set, get) => ({
 
     projects: json,
-    getProjects: () => [...get().projects],
-    getProject: (i) =>  get().projects[i]
+    getProjects: () => [...get().projects]
 
 }))
 

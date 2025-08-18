@@ -1,85 +1,37 @@
 [
     {
         "name":"Fractal Viewer V2", 
-        "galleryImages": 
-            [
-                "FractalViewerV2/fracv1.png",
-                "FractalViewerV2/fracv2.png",
-                "FractalViewerV2/fracv3.png",
-                "FractalViewerV2/fracv4.png",
-                "FractalViewerV2/fracv5.png",
-                "FractalViewerV2/fracv6.png",
-                "FractalViewerV2/fracv7.png",
-                "FractalViewerV2/fracv8.png",
-                "FractalViewerV2/fracv9.png",
-                "FractalViewerV2/fracv10.png",
-                "FractalViewerV2/fracv11.png",
-                "FractalViewerV2/fracv12.png",
-                "FractalViewerV2/fracv13.png",
-                "FractalViewerV2/fracv14.png",
-                "FractalViewerV2/fracv15.png",
-                "FractalViewerV2/fracv16.png",
-                "FractalViewerV2/fracv17.png",
-                "FractalViewerV2/fracv18.png",
-                "FractalViewerV2/fracv19.png",
-                "FractalViewerV2/fracv20.png",
-                "FractalViewerV2/fracv21.png",
-                "FractalViewerV2/fracv22.png"
-            ],
-        "github": "https://github.com/gabor6502/Fractal-Generator",
+        "github": ["https://github.com/gabor6502/Fractal-Generator"],
         "headline": "Make sure to add a headline!",
         "techStack": ["Java", "JOGL"]
     },
     {
-        "name":"Collections", 
-        "galleryImages": 
-            [
-                "temp.jpg"
-            ],
-        "github": "",
+        "name":"Collections",
+        "github": ["https://github.com/gabor6502/collections_spring_backend"],
         "headline": "Make sure to add a headline!",
         "techStack": ["React", "Spring", "Junit", "PostgreSQL"]
     },
     {
-        "name":"DogSpinnerX", 
-        "galleryImages": 
-            [
-                "Dogsng/dogcenter.png",
-                "Dogsng/dogscores.png"
-            ],
-        "github": "",
+        "name":"DogSpinnerX",
+        "github": ["https://github.com/gabor6502/dogs-ng", "https://github.com/gabor6502/highscores-backend"],
         "headline": "Make sure to add a headline!",
         "techStack": ["Angular", "Node", "Jest", "Typeorm", "PostgreSQL"]
     },
     {
-        "name":"Daemon", 
-        "galleryImages": 
-            [
-                "Daemon/daemon-curl.png"
-            ],
-        "github": "",
+        "name":"Daemon",
+        "github": ["https://github.com/gabor6502/daemon-helper"],
         "headline": "Make sure to add a headline!",
         "techStack": ["C", "Linux"]
     },
     {
-        "name":"CUDA Fractal 2D", 
-        "galleryImages": 
-            [
-                "temp.jpg"
-            ],
-        "github": "",
+        "name":"CUDA Fractal 2D",
+        "github": ["https://github.com/gabor6502/cuda_fractal_2d"],
         "headline": "Make sure to add a headline!",
         "techStack": ["Cpp", "CUDA", "Opengl"]
     },
     {
-        "name":"BF Interpreter", 
-        "galleryImages": 
-            [
-                "BF/bfcode.png",
-                "BF/bf-runproc.png",
-                "BF/bf-terminal.png"
-            ],
-        "github": "",
+        "name":"BF Interpreter",
+        "github": ["https://github.com/gabor6502/bf"],
         "headline": "Make sure to add a headline!",
         "techStack": ["C"]
     }
