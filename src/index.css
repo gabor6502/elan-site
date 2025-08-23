@@ -1,6 +1,8 @@
 body
 {
-   background: linear-gradient(90deg, #12f006, #00aa75, #0055ee, blue);
+   /*background: linear-gradient(90deg, #12f006, #00aa75, #0055ee, blue);*/
+   /*gradient a bit jarring, use the middle colours instead*/
+   background: linear-gradient(90deg, #00cc75, #0055ee);
 }
 
 .clickable

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button } from "react-bootstrap"
+import { Resend } from 'resend';
 import WordCountTextarea from "./WordCountTextarea"
 
 const FNAME_ID = "firstName"
@@ -11,7 +12,7 @@ export default function ContactForm()
 {
     const [validated, setValidated] = useState(false)
 
-    const handleSubmit = (event) => 
+    const handleSubmit = async (event) => 
     {
         const form = event.target
 
@@ -29,8 +30,24 @@ export default function ContactForm()
 
 
         // TODO: use resend API to email contact.egabor@gmail.com
+        //
+    
+        const resend = new Resend(process.env.REACT_APP_RESEND_KEY);
 
-        
+        console.log(resend)
+
+        const {data, error} = await resend.emails.send({
+                from: 'onboarding@resend.dev',
+                to: 'contact.egabor@gmail.com',
+                subject: 'Hello World',
+                html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
+                });
+
+        if (error)
+        {
+            console.log(error)
+        }
+        console.log(data)
     
         setValidated(true);
     }
@@ -56,7 +73,7 @@ export default function ContactForm()
                         <InputGroup>
                             <InputGroup.Text>@</InputGroup.Text>
                             <Form.Control required type="text" className="rounded-end" pattern="[\w\-\.]+[@]([\w]+\.)+[\w\-]{2,}" placeholder="me@example.com"/>
-                            <Form.Control.Feedback type="invalid">Please enter your email.</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">Please a valid email.</Form.Control.Feedback>
                         </InputGroup>
                     </Form.Group>
                 </Row>

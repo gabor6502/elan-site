@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { Outlet } from "react-router";
-import { Row, Col, Container } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 export default function About()
 {
