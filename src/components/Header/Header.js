@@ -21,7 +21,6 @@ export default function Header()
 
     const [links] = useState([
         {to: "/", content: "Elan Gabor", classNameAddon: "fs-1 fw-bold"},
-        {to: "/projects", content: "Projects", classNameAddon: ""},
         {to: "/about", content: "About", classNameAddon: ""},
         {to: "/contact", content: "Contact", classNameAddon: ""}
     ])

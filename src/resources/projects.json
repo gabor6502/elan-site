@@ -11,14 +11,14 @@
         "github": ["https://github.com/gabor6502/collections_spring_backend"],
         "headline": "Make sure to add a headline!",
         "description": "Make sure to add a description!",
-        "techStack": ["React", "Spring", "Junit", "PostgreSQL"]
+        "techStack": ["Angular", "Spring", "Junit", "PostgreSQL"]
     },
     {
-        "name":"DogSpinnerX",
-        "github": ["https://github.com/gabor6502/dogs-ng", "https://github.com/gabor6502/highscores-backend"],
+        "name":"Website + Contact Manager",
+        "github": ["https://github.com/gabor6502/elan-site", "https://github.com/gabor6502/elan-mailer"],
         "headline": "Make sure to add a headline!",
         "description": "Make sure to add a description!",
-        "techStack": ["Angular", "Node", "Jest", "Typeorm", "PostgreSQL"]
+        "techStack": ["React", "Node", "Jest", "Typeorm", "PostgreSQL"]
     },
     {
         "name":"Daemon",
