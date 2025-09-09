@@ -8,7 +8,7 @@ function setClicked(pathname, link)
 {
     if (link.to !== "/" && pathname === link.to) // not a fan of the way the box looks around the home button, but others are good
     {
-        return "clicked"
+        return "headerClicked"
     }
 }
 
@@ -37,7 +37,7 @@ export default function Header()
                 links.map((link) => 
                 {
                     return (<><Link className="undecLink" to={link.to}>
-                                <span className={link.classNameAddon + " clickable " + setClicked(location.pathname, link)}>
+                                <span className={link.classNameAddon + " headerClickable " + setClicked(location.pathname, link)}>
                                     {link.content}
                                 </span>
                             </Link></>)

@@ -1,37 +1,37 @@
 [
     {
         "name":"Fractal Viewer V2", 
-        "repository": [{"repo":"https://github.com/gabor6502/Fractal-Generator"}],
+        "repository": [{"Repo":"https://github.com/gabor6502/Fractal-Generator"}],
         "headline": "A standalone application that renders the Mandelbrot Set and Burning Ship fractals.",
         "techStack": ["Java", "JOGL"]
     },
     {
         "name":"Collections",
-        "repository": [{"backend":"https://github.com/gabor6502/collections_spring_backend"}],
+        "repository": [{"Backend":"https://github.com/gabor6502/collections_spring_backend"}],
         "headline": "A web app to help users manage their collections of physical things, like books, CDs, other collectables, and share them with others.",
         "techStack": ["Angular", "Spring", "Junit", "PostgreSQL"]
     },
     {
         "name":"Website + Contact Manager",
-        "repository": [{"frontend":"https://github.com/gabor6502/elan-site"}, {"backend":"https://github.com/gabor6502/elan-mailer"}],
+        "repository": [{"Frontend":"https://github.com/gabor6502/elan-site"}, {"Backend":"https://github.com/gabor6502/elan-mailer"}],
         "headline": "My own website! Built to display a portfolio of projects and introduce myself to other people and employers. Also faciliates contact requests through a backend.",
         "techStack": ["React", "Node", "Jest", "Typeorm", "PostgreSQL"]
     },
     {
         "name":"Daemon",
-        "repository": [{"repo":"https://github.com/gabor6502/daemon-helper"}],
+        "repository": [{"Repo":"https://github.com/gabor6502/daemon-helper"}],
         "headline": "A linux background process/daemon that acts as a personal assistant, managing emails, calendar dates, etc.",
         "techStack": ["C", "Linux"]
     },
     {
         "name":"CUDA Fractal 2D",
-        "repository": [{"repo":"https://github.com/gabor6502/cuda_fractal_2d"}],
+        "repository": [{"Repo":"https://github.com/gabor6502/cuda_fractal_2d"}],
         "headline": "A GPU accelerated version of the FractalViewerV2, with the goal of running in real time and eventually rendering 3D fractals also in real time.",
         "techStack": ["Cpp", "CUDA", "Opengl"]
     },
     {
         "name":"BF Interpreter",
-        "repository": [{"repo":"https://github.com/gabor6502/bf"}],
+        "repository": [{"Repo":"https://github.com/gabor6502/bf"}],
         "headline": "An interpreter and compiler system for the obscure programming language called \"Brainfuck\".",
         "techStack": ["C"]
     }

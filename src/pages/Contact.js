@@ -11,7 +11,7 @@ export default function Contact()
         <Container className="card">
             <Row>
                 <span className="fs-1 fw-bold">Hmu!</span>
-                <p>Want to reach out to discuss emploment or freelance opportunities, my projects, or just shoot the breeze? Feel free to contact me below:</p>
+                <p>Want to reach out to discuss emploment or freelance opportunities, my projects, or just say hi? Feel free to contact me below:</p>
             </Row>
 
             <ContactForm />

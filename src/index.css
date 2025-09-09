@@ -5,7 +5,7 @@ body
    background: linear-gradient(90deg, #00cc75, #0055ee);
 }
 
-.clickable
+.headerClickable
 {
    transition: background-color;
    transition-duration: 250ms;
@@ -16,8 +16,8 @@ body
    background: rgba(256, 256, 256, 0.0);
 }
 
-.clicked,
-.clickable:hover
+.headerClicked,
+.headerClickable:hover
 {
    background: rgba(256, 256, 256, 0.5);
 }
@@ -100,15 +100,19 @@ body
 {
    display: inline-flex;
 
-   border: 2px solid red;
-
-
    transition: width 1s;
    interpolate-size: allow-keywords; /* not support on firefox yet, test animations on chrome*/
 
-   width: 6.5%;
-}
+   border: 2px solid rgb(50,50,50);
+   border-radius: 5px;
 
+   width: 5.5%;
+
+   align-content: center;
+
+   overflow:hidden;
+   white-space: nowrap;
+}
 
 .repoLinksContainer:hover
 {
@@ -120,26 +124,30 @@ body
    background: rgba(256,256,256, 0.5);
    backdrop-filter: blur(2px);
 
-   border-radius: 5px;
+   border-radius: 3px;
 
-   max-width: 35px;
-   max-height: 35px;
-
-   margin-right: 5px;
+   max-width: 30px;
+   max-height: 30px;
+   
 }
 
 .repoLinkButton
 {
-   border-radius: 5px;
 
-   background: rgba(200,200,200);
+   background-color: rgb(210,210,210);
+   transition: background-color 500ms;
 
-   padding: 3px;
+   border-left: 1px solid black;
 
+   cursor: pointer;
+
+   padding-top: 2px;
+   padding-bottom: 2px;
+   padding-left: 5px;
+   padding-right: 5px;
 }
 
-.overflowControl
+.repoLinkButton:hover
 {
-   overflow:hidden;
-   white-space: nowrap;
+   background-color: rgb(240, 240, 240);
 }

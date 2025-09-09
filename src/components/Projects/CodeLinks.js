@@ -10,9 +10,10 @@ export default function CodeLinks({linkSet})
     {
         setLinks(linkSet.map((linkObj) => 
         {
-            return {name: Object.keys(linkObj)[0], url: linkObj.link}
+            let key = Object.keys(linkObj)[0]
+            return {name: key, url: linkObj[key]}
         }))
-    }, [linkSet, links])
+    }, [linkSet])
 
   
 
@@ -20,11 +21,9 @@ export default function CodeLinks({linkSet})
         <div>
             <span className="repoLinksContainer">
                 <Image className={"repobadge"} src={require(`../../resources/pictures/git.png`)} alt={"repo logo"} />
-                    <span className={"overflowControl"}>
-                        {
-                        links.map((link) => { return <CodeLinkButton name={link.name} link={link.url}/>})
-                        }
-                    </span>
+                {
+                links.map((link) => { return <CodeLinkButton name={link.name} link={link.url}/>})
+                }
             </span>
         </div>
     </>)
