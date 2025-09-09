@@ -3,36 +3,42 @@
         "name":"Fractal Viewer V2", 
         "repository": [{"Repo":"https://github.com/gabor6502/Fractal-Generator"}],
         "headline": "A standalone application that renders the Mandelbrot Set and Burning Ship fractals.",
-        "techStack": ["Java", "JOGL"]
+        "techStack": ["Java", "JOGL"],
+        "technicalPoints": ["Creating a fast super sampling algorithm to run on the CPU.", "Making a preview feature to skip the long render times for a full image if it isn't desired."]
     },
     {
         "name":"Collections",
         "repository": [{"Backend":"https://github.com/gabor6502/collections_spring_backend"}],
         "headline": "A web app to help users manage their collections of physical things, like books, CDs, other collectables, and share them with others.",
-        "techStack": ["Angular", "Spring", "Junit", "PostgreSQL"]
+        "techStack": ["Angular", "Spring", "Junit", "PostgreSQL"],
+        "technicalPoints": ["Modeling data to allow for user customization while not being too specific nor too general.", "Choosing a balance between storing certain data attributes or relying on querires to fetch specific information."]
     },
     {
         "name":"Website + Contact Manager",
         "repository": [{"Frontend":"https://github.com/gabor6502/elan-site"}, {"Backend":"https://github.com/gabor6502/elan-mailer"}],
         "headline": "My own website! Built to display a portfolio of projects and introduce myself to other people and employers. Also faciliates contact requests through a backend.",
-        "techStack": ["React", "Node", "Jest", "Typeorm", "PostgreSQL"]
+        "techStack": ["React", "Node", "Jest", "Typeorm", "PostgreSQL"],
+        "technicalPoints": ["", ""]
     },
     {
         "name":"Daemon",
         "repository": [{"Repo":"https://github.com/gabor6502/daemon-helper"}],
         "headline": "A linux background process/daemon that acts as a personal assistant, managing emails, calendar dates, etc.",
-        "techStack": ["C", "Linux"]
+        "techStack": ["C", "Linux"],
+        "technicalPoints": ["Foregoing the conviniences of JavaScript and using C for processing web JSON data.", "Linking CURL library to facilitate web requests"]
     },
     {
         "name":"CUDA Fractal 2D",
         "repository": [{"Repo":"https://github.com/gabor6502/cuda_fractal_2d"}],
         "headline": "A GPU accelerated version of the FractalViewerV2, with the goal of running in real time and eventually rendering 3D fractals also in real time.",
-        "techStack": ["Cpp", "CUDA", "Opengl"]
+        "techStack": ["Cpp", "CUDA", "Opengl"],
+        "technicalPoints": ["Intergrating CUDA and Opengl in a way that worked effectively and efficiently.", "Sychronizing all aspects of the program, from user input on the CPU to rendering and drawing on the GPU."]
     },
     {
         "name":"BF Interpreter",
         "repository": [{"Repo":"https://github.com/gabor6502/bf"}],
-        "headline": "An interpreter and compiler system for the obscure programming language called \"Brainfuck\".",
-        "techStack": ["C"]
+        "headline": "An interpreter/compiler system for the \"Brainfuck\" programming language.",
+        "techStack": ["C"],
+        "technicalPoints": ["Working within the constraints of an intentionally difficult language.", ""]
     }
 ]

@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { Outlet } from "react-router";
-import { Container } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 
 export default function About()
 {
@@ -8,7 +8,11 @@ export default function About()
 
     return(<>
         <Container className="card">
-            <h2>About</h2>
+            <Row>
+                <span className="fs-1 fw-bold">About</span>
+                
+            </Row>
+        
             <Outlet />
         </Container>
     </>)
