@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button } from "react-bootstrap"
-import { Resend } from 'resend';
 import WordCountTextarea from "./WordCountTextarea"
 
 const FNAME_ID = "firstName"
@@ -29,25 +28,8 @@ export default function ContactForm()
 
 
 
-        // TODO: use resend API to email contact.egabor@gmail.com
-        //
+        // TODO: link with custom backend
     
-        const resend = new Resend(process.env.REACT_APP_RESEND_KEY);
-
-        console.log(resend)
-
-        const {data, error} = await resend.emails.send({
-                from: 'onboarding@resend.dev',
-                to: 'contact.egabor@gmail.com',
-                subject: 'Hello World',
-                html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
-                });
-
-        if (error)
-        {
-            console.log(error)
-        }
-        console.log(data)
     
         setValidated(true);
     }

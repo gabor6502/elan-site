@@ -1,14 +1,11 @@
-import { useEffect } from "react"
 import { Container } from "react-bootstrap"
 
 import Project from "./Project"
-import useStore from "./ProjectsStore"
+import useProjectStore from "./ProjectsStore"
 
 export default function Projects()
 {
-    const { getProjects } = useStore();
-
-    useEffect(() => {document.title = "EG | Projects"})
+    const { getProjects } = useProjectStore();
 
     return(<>
         <Container className="card">
