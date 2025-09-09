@@ -4,7 +4,7 @@
         "repository": [{"Repo":"https://github.com/gabor6502/Fractal-Generator"}],
         "headline": "A standalone application that renders the Mandelbrot Set and Burning Ship fractals.",
         "techStack": ["Java", "JOGL"],
-        "technicalPoints": ["Creating a fast super sampling algorithm to run on the CPU.", "Making a preview feature to skip the long render times for a full image if it isn't desired."]
+        "technicalPoints": ["Created a supersampling algorithm to enahnce image quality.", "Developed a preview window to bypass render times, so the user can explore fractals more efficiently.", "Minimal GUI created to allow user to select colour schemes and fractal types."]
     },
     {
         "name":"Collections",
@@ -16,29 +16,29 @@
     {
         "name":"Website + Contact Manager",
         "repository": [{"Frontend":"https://github.com/gabor6502/elan-site"}, {"Backend":"https://github.com/gabor6502/elan-mailer"}],
-        "headline": "My own website! Built to display a portfolio of projects and introduce myself to other people and employers. Also faciliates contact requests through a backend.",
+        "headline": "My own website! Built to display a portfolio of projects and introduce myself to other people and employers.",
         "techStack": ["React", "Node", "Jest", "Typeorm", "PostgreSQL"],
-        "technicalPoints": ["", ""]
+        "technicalPoints": ["Contains contact page to allow direct contact with me via email.", "Built a backend to facilitate SMTP of emails and keep mail under alloted quota."]
     },
     {
         "name":"Daemon",
         "repository": [{"Repo":"https://github.com/gabor6502/daemon-helper"}],
         "headline": "A linux background process/daemon that acts as a personal assistant, managing emails, calendar dates, etc.",
         "techStack": ["C", "Linux"],
-        "technicalPoints": ["Foregoing the conviniences of JavaScript and using C for processing web JSON data.", "Linking CURL library to facilitate web requests"]
+        "technicalPoints": ["Using LibCURL to make HTTP requests and parsing the JSON responses.", "Developing interaction to facilitate notifcations and event management."]
     },
     {
         "name":"CUDA Fractal 2D",
         "repository": [{"Repo":"https://github.com/gabor6502/cuda_fractal_2d"}],
         "headline": "A GPU accelerated version of the FractalViewerV2, with the goal of running in real time and eventually rendering 3D fractals also in real time.",
         "techStack": ["Cpp", "CUDA", "Opengl"],
-        "technicalPoints": ["Intergrating CUDA and Opengl in a way that worked effectively and efficiently.", "Sychronizing all aspects of the program, from user input on the CPU to rendering and drawing on the GPU."]
+        "technicalPoints": ["Writing CUDA kernels to run parallel tasks on the GPU that render fractals.", "Intergrating CUDA and Opengl to render and draw fractals all on the GPU."]
     },
     {
         "name":"BF Interpreter",
         "repository": [{"Repo":"https://github.com/gabor6502/bf"}],
         "headline": "An interpreter/compiler system for the \"Brainfuck\" programming language.",
         "techStack": ["C"],
-        "technicalPoints": ["Working within the constraints of an intentionally difficult language.", ""]
+        "technicalPoints": ["Developing supports to directly run a program or run in a live interpreter.", "Adding options to customize memory size, both number of cells and max bytes stored in those cells."]
     }
 ]
