@@ -1,19 +1,9 @@
-import { useEffect, useState } from "react"
 import { Row, Container } from "react-bootstrap"
 import TechIconBadge from "./TechIconBadge"
+import CodeLinks from "./CodeLinks"
 
 export default function Project({project})
 {
-    
-    const [links, setLinks] = useState([])
-    
-    useEffect(() => 
-    {
-        setLinks(project.repository.map((linkObj) => 
-        {
-            return {linkName: Object.keys(linkObj)[0], link: linkObj.link}
-        }))
-    }, [project, links])
 
     return (<>
             <Container className="card">
@@ -29,11 +19,7 @@ export default function Project({project})
                 </Row>
                 <Row>
                     <span>{project.headline}</span>
-                    <span>
-                        {
-                            links.map((linkObj) => { return <p>{linkObj.linkName}</p>})
-                        }
-                    </span>
+                    <CodeLinks linkSet={project.repository}/>
                 </Row>
             </Container> 
         </>)
