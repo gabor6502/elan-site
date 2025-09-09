@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import { Image } from "react-bootstrap"
+import CodeLinkButton from "./CodeLinkButton"
 
 export default function CodeLinks({linkSet})
 {
@@ -8,15 +10,22 @@ export default function CodeLinks({linkSet})
     {
         setLinks(linkSet.map((linkObj) => 
         {
-            return {linkName: Object.keys(linkObj)[0], link: linkObj.link}
+            return {name: Object.keys(linkObj)[0], url: linkObj.link}
         }))
     }, [linkSet, links])
 
+  
+
     return (<>
-        <span>
-            {
-                links.map((linkObj) => { return <p>{linkObj.linkName}</p>})
-            }
-        </span>
+        <div>
+            <span className="repoLinksContainer">
+                <Image className={"repobadge"} src={require(`../../resources/pictures/git.png`)} alt={"repo logo"} />
+                    <span className={"overflowControl"}>
+                        {
+                        links.map((link) => { return <CodeLinkButton name={link.name} link={link.url}/>})
+                        }
+                    </span>
+            </span>
+        </div>
     </>)
 }

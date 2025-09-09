@@ -95,3 +95,51 @@ body
    max-width: 100px;
    max-height: 100px;
 }
+
+.repoLinksContainer
+{
+   display: inline-flex;
+
+   border: 2px solid red;
+
+
+   transition: width 1s;
+   interpolate-size: allow-keywords; /* not support on firefox yet, test animations on chrome*/
+
+   width: 6.5%;
+}
+
+
+.repoLinksContainer:hover
+{
+   width: max-content;
+}
+
+.repobadge
+{
+   background: rgba(256,256,256, 0.5);
+   backdrop-filter: blur(2px);
+
+   border-radius: 5px;
+
+   max-width: 35px;
+   max-height: 35px;
+
+   margin-right: 5px;
+}
+
+.repoLinkButton
+{
+   border-radius: 5px;
+
+   background: rgba(200,200,200);
+
+   padding: 3px;
+
+}
+
+.overflowControl
+{
+   overflow:hidden;
+   white-space: nowrap;
+}
