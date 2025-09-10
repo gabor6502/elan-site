@@ -48,8 +48,6 @@ export default function ContactForm()
 
             setValidated(false) // turns off validation decoration since we're done  with it
         }
-
-        
     }
 
 
