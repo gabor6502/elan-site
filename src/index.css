@@ -150,3 +150,28 @@ body
 {
    background-color: rgb(210,210,210);
 }
+
+.educationIconBadge
+{
+   max-width: 75px;
+   max-height: 75px;
+
+   margin-right: 5px;
+   margin-left: 5px;
+
+   margin-bottom: 8px;
+}
+
+.workIconBadge
+{
+   margin-right: 5px;
+   margin-left: 5px;
+
+   margin-bottom: 8px;
+}
+
+#govCanBadge
+{
+   max-width: 75px;
+   max-height: 75px;
+}
