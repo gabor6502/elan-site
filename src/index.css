@@ -135,7 +135,7 @@ body
 .repoLinkButton
 {
 
-   background-color: rgb(210,210,210);
+   background-color: rgb(240, 240, 240);
    transition: background-color 500ms;
 
    border-left: 1px solid black;
@@ -150,5 +150,5 @@ body
 
 .repoLinkButton:hover
 {
-   background-color: rgb(240, 240, 240);
+   background-color: rgb(210,210,210);
 }

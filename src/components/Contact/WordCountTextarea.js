@@ -1,11 +1,19 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Col, Form } from "react-bootstrap"
 
-export default function WordCountTextarea({max, ctrlId})
+export default function WordCountTextarea({max, ctrlId, resetContent})
 {
     const [wordCount, setWordCount] = useState(0)
     const [content, setContent] = useState("")
     
+    // this is for the manual reset of the form when submit's default behaviour is overriden
+    useEffect(() => {
+        if (resetContent)
+        {
+            setContent("")
+        }
+    }, [resetContent])
+
     const contentChange = (value) => 
     {
         let text = value

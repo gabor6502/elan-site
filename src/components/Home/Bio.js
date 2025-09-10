@@ -19,7 +19,7 @@ export default function Bio()
                                 </p>
                                 <p>
                                     As a dedicated and passionate software developer, I'm excited to start the next chapter, and have been looking for a company to 
-                                    start my career with. I am lookign forward to making meaningful contributions alongside a motivated and knowledgeable team. 
+                                    start my career with. I am excited to make meaningful contributions alongside a motivated and knowledgeable team. 
                                 </p>
                                 <p>
                                     Thanks for checking out the site!

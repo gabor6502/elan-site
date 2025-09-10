@@ -20,9 +20,9 @@ export default function Header()
     const location = useLocation() // expecting object with 'pathname' as property
 
     const [links] = useState([
-        {to: "/", content: "Elan Gabor", classNameAddon: "fs-1 fw-bold"},
-        {to: "/about", content: "About", classNameAddon: ""},
-        {to: "/contact", content: "Contact", classNameAddon: ""}
+        {key:0, to: "/", content: "Elan Gabor", classNameAddon: "fs-1 fw-bold"},
+        {key:1, to: "/about", content: "About", classNameAddon: ""},
+        {key:2, to: "/contact", content: "Contact", classNameAddon: ""}
     ])
 
     useEffect(() => {
