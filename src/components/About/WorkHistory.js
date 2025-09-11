@@ -4,16 +4,15 @@ export default function WorkHistory()
 {
     return (<>
         <Container className="card">
-            <span className="fs-2 fw-bold">Work History</span>
+            <span className="fs-2 fw-bold">Work History (co-op)</span>
             <Row>
-                <Image className="workIconBadge" src={require(`../../resources/pictures/about/work/govcanlogo.png`)} />
+                <Image id="govCanBadge" className="workIconBadge" src={require(`../../resources/pictures/about/work/govcanlogo.png`)} />
             </Row>
             <Row>
-                <Image className="workIconBadge" src={require(`../../resources/pictures/about/work/mhilogo.png`)} />
-                <Image className="workIconBadge" src={require(`../../resources/pictures/about/work/pscadlogo.png`)} />
+                <Image id="mhiBadge" className="workIconBadge" src={require(`../../resources/pictures/about/work/mhilogo.png`)} />
             </Row>
             <Row>
-                <Image className="workIconBadge" src={require(`../../resources/pictures/about/work/govmanlogo.png`)} />
+                <Image id="govManBadge" className="workIconBadge" src={require(`../../resources/pictures/about/work/govmanlogo.png`)} />
             </Row>
         </Container>
     </>)

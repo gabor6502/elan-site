@@ -56,8 +56,6 @@ body
 {
    margin-left: 2px;
    margin-right: 2px;
-
-
 }
 
 #projectPreviewButtons input[type="radio"]:checked
@@ -153,13 +151,26 @@ body
 
 .educationIconBadge
 {
-   max-width: 75px;
-   max-height: 75px;
-
-   margin-right: 5px;
-   margin-left: 5px;
-
    margin-bottom: 8px;
+}
+
+#uofwLogo
+{
+   max-width: 70px;
+   max-height: 70px;
+}
+
+#uofmLogo
+{
+   max-width: 80px;
+   max-height: 80px;
+
+   margin-left: 8px;
+}
+
+.educationEnty
+{
+   display: flex;
 }
 
 .workIconBadge
@@ -172,6 +183,23 @@ body
 
 #govCanBadge
 {
+   max-width: 150px;
+   max-height: 100px;
+}
+
+#govManBadge
+{
+   max-width: 200px;
+   max-height: 150px;
+}
+
+#mhiBadge
+{
    max-width: 75px;
    max-height: 75px;
+}
+
+#spinner
+{
+   margin-left: 10px;
 }

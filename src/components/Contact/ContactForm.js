@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Row, Col, Form, InputGroup, Button, Alert } from "react-bootstrap"
+import { Row, Col, Form, InputGroup, Button, Alert, Spinner } from "react-bootstrap"
 import WordCountTextarea from "./WordCountTextarea"
 import sendMessage from "./ContactAPI"
 
@@ -14,6 +14,7 @@ export default function ContactForm()
     const [validated, setValidated] = useState(false)
     const [showSentAlert, setShowSentAlert] = useState(false)
     const [succAlert, setSuccAlert] = useState(false)
+    const [spinning, setSpinning] = useState(true)
 
     const handleSubmit = async (event) => 
     {
@@ -28,6 +29,8 @@ export default function ContactForm()
         }
         else
         {
+            setSpinning(true)
+
             // we want to show an alert after sending a message, and default submit behaviour prevents this as it reloads the page completely
             event.preventDefault()
             event.stopPropagation()
@@ -38,15 +41,14 @@ export default function ContactForm()
             let sendSuccess
 
             inputs.forEach((input) => {formData[input.id] = input.value})
-
             inputs.forEach((input) => {input.value = ""}) // wipe since we're done collecting the data
 
             sendSuccess = sendMessage(formData[FNAME_ID], formData[LNAME_ID], formData[EMAIL_ID], formData[MESSAGE_ID])
 
             setSuccAlert(sendSuccess)
             setShowSentAlert(true)
-
             setValidated(false) // turns off validation decoration since we're done  with it
+            setSpinning(false)
         }
     }
 
@@ -84,7 +86,15 @@ export default function ContactForm()
                 <Row className="mt-2">
                     <WordCountTextarea max={500} ctrlId={MESSAGE_ID} resetContent={showSentAlert}/> {/* if we ended up showing a sent alert, we should reset its content*/}
                 </Row>
-                <Button type="submit" className="mt-2" variant="success">Send</Button>
+
+                <span>
+                    <span>
+                        <Button type="submit" variant="success" disabled={spinning}>Send</Button>
+                    </span>
+                        {spinning && <Spinner animation="border" role="status" id="spinner">
+                            <span className="visually-hidden">Sending...</span> {/* accessibility */}
+                        </Spinner>}
+                </span>
             </Form>
         </Row>
     </>)
