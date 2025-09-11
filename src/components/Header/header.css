@@ -22,12 +22,13 @@
 .undecLink
 {
     all:unset;
+    cursor: pointer;
 }
 
 #links span
 {
-    text-align: center;
-    cursor: pointer;
+    /*text-align: center;*/
+    /*cursor: pointer;*/
 
     padding-left: 5px;
     padding-right: 5px;
