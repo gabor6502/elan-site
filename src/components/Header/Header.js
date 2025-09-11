@@ -38,8 +38,8 @@ export default function Header()
                             <span className={"fs-1 fw-bold headerClickable "+setClicked(currPath, "/")}>Elan Gabor</span>
                         </Link>
                     </Col>
-                    <Col id="links">
-                        <span>
+                    <Col >
+                        <span id="links">
                             {
                                 pagelinks.map((link) => 
                                 {
@@ -61,28 +61,3 @@ export default function Header()
         </nav>
     </>)
 }
-
-// old header code
-/*
-return(<>
-        <nav id="header" className="text-center">
-
-            <span id="links">
-            {
-                links.map((link) => 
-                {
-                    return (<><Link className="undecLink" to={link.to}>
-                                <span className={link.classNameAddon + " headerClickable " + setClicked(location.pathname, link)}>
-                                    {link.content}
-                                </span>
-                            </Link></>)
-                })
-            }
-            </span>
-
-            <Image id="linkedIn" rounded src={require("../../resources/pictures/linkedinIcon.ico")} onClick={openLinkedInProfile} title="Open LinkedIn profile" alt="LinkedIn logo" />
-            <Image id="GitHub" rounded src={require("../../resources/pictures/githubIcon.ico")} onClick={openGitHubProfile} title="Open GitHub profile" alt="GitHub logo" />
-        </nav>
-
-    </>)
-    */
