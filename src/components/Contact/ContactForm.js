@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button, Alert, Spinner } from "react-bootstrap"
-import WordCountTextarea from "./WordCountTextarea"
 import sendMessage from "./ContactAPI"
 
 const FNAME_ID = "firstName"
@@ -8,13 +7,31 @@ const LNAME_ID = "lastName"
 const EMAIL_ID = "email"
 const MESSAGE_ID = "message"
 
+const MAX_WORDS = 500
 
 export default function ContactForm()
 {
     const [validated, setValidated] = useState(false)
     const [showSentAlert, setShowSentAlert] = useState(false)
     const [succAlert, setSuccAlert] = useState(false)
-    const [spinning, setSpinning] = useState(true)
+    const [spinning, setSpinning] = useState(false)
+
+    const [wordCount, setWordCount] = useState(0)
+    const [content, setContent] = useState("")
+
+    const contentChange = (value) => 
+    {
+        let text = value
+        let splitText = text.split(/[ |\n]/)
+        let currcount = splitText.filter((token) => token !== "").length
+
+        if (currcount <= MAX_WORDS)
+        {
+            setContent(text)
+            setWordCount(currcount)
+        }
+       
+    }
 
     const handleSubmit = async (event) => 
     {
@@ -42,6 +59,7 @@ export default function ContactForm()
 
             inputs.forEach((input) => {formData[input.id] = input.value})
             inputs.forEach((input) => {input.value = ""}) // wipe since we're done collecting the data
+            setContent("") // clears text area
 
             sendSuccess = sendMessage(formData[FNAME_ID], formData[LNAME_ID], formData[EMAIL_ID], formData[MESSAGE_ID])
 
@@ -84,16 +102,18 @@ export default function ContactForm()
                     </Form.Group>
                 </Row>
                 <Row className="mt-2">
-                    <WordCountTextarea max={500} ctrlId={MESSAGE_ID} resetContent={showSentAlert}/> {/* if we ended up showing a sent alert, we should reset its content*/}
+                    <Form.Group as={Col} controlId={MESSAGE_ID}>
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control required as="textarea" rows={6} value={content} onChange={(event) => contentChange(event.target.value)} style={{resize:"none"}} placeholder="Type your message here"/>
+                        <Form.Control.Feedback type="invalid">A message is required.</Form.Control.Feedback>
+                        <p className="text-black-50">{wordCount}/{MAX_WORDS}</p>
+                    </Form.Group>
                 </Row>
-
                 <span>
-                    <span>
-                        <Button type="submit" variant="success" disabled={spinning}>Send</Button>
-                    </span>
-                        {spinning && <Spinner animation="border" role="status" id="spinner">
-                            <span className="visually-hidden">Sending...</span> {/* accessibility */}
-                        </Spinner>}
+                    <Button className="mb-3" type="submit" variant="success" disabled={spinning}>Send</Button>
+                    {spinning && <Spinner animation="border" role="status" id="spinner">
+                        <span className="visually-hidden">Sending...</span> {/* accessibility */}
+                    </Spinner>}
                 </span>
             </Form>
         </Row>

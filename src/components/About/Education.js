@@ -19,7 +19,7 @@ export default function Education()
                     <Image id="uofmLogo" className="educationIconBadge" src={require(`../../resources/pictures/about/education/uofmlogo.png`)} alt="UM Logo"/>
                     <span>
                         <div className="fs-4 fw-bold">University of Manitoba (2025)</div>
-                        <div className="fs-5">BSc. of Computer Science (co-op), minor in Mathematics</div>
+                        <div className="fs-5">BSc. in Computer Science (co-op), minor in Mathematics</div>
                     </span>
                 </div>
             </Row>
