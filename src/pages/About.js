@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { Outlet } from "react-router";
-import { Container } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 import Personal from "../components/About/Personal";
 import Education from "../components/About/Education";
 import WorkHistory from "../components/About/WorkHistory";
@@ -11,9 +11,21 @@ export default function About()
 
     return(<>
         <Container >
-            <Personal />
+            {/*<WorkHistory />
             <Education />
-            <WorkHistory />
+            <Personal />*/}
+            <Row>
+                <Col >
+                    <WorkHistory />
+                </Col>
+                <Col xs={4}>
+                    <Education />
+                    <Personal />
+                </Col>
+            </Row>
+            
+            
+            
             
             <Outlet />
         </Container>

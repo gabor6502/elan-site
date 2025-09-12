@@ -12,6 +12,8 @@ body
    border-radius: 5px;
 
    background: rgba(256, 256, 256, 0.0);
+
+   padding: 4px;
 }
 
 .headerClicked,
@@ -133,7 +135,7 @@ body
 
 .badgeRow
 {
-   float :right;
+   float: right;
 }
 
 .projImg
@@ -237,6 +239,12 @@ body
    margin-bottom: 8px;
 }
 
+.workEntry
+{
+   margin-top: 10px;
+   padding: 10px;
+}
+
 #govCanBadge
 {
    max-width: 150px;
@@ -251,8 +259,8 @@ body
 
 #mhiBadge
 {
-   max-width: 75px;
-   max-height: 75px;
+   max-width: 200px;
+   max-height: 90px;
 }
 
 #spinner
