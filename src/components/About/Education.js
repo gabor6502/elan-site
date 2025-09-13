@@ -9,8 +9,8 @@ export default function Education()
                <div className="educationEnty">
                     <Image id="uofwLogo" className="educationIconBadge" src={require(`../../resources/pictures/about/education/uwclogo.png`)} alt="UW Logo"/>
                     <span className="educationContents">
-                        <div className="fs-4 fw-bold">University of Winnipeg Collegiate (2018)</div>
-                        <div className="fs-5">High School Diploma</div>
+                        <div className="fs-5 fw-bold">University of Winnipeg Collegiate (2018)</div>
+                        <div className="fs-6">High School Diploma</div>
                     </span>
                 </div>
             </Row>
@@ -18,8 +18,8 @@ export default function Education()
                 <div className="educationEnty">
                     <Image id="uofmLogo" className="educationIconBadge" src={require(`../../resources/pictures/about/education/uofmlogo.png`)} alt="UM Logo"/>
                     <span className="educationContents">
-                        <div className="fs-4 fw-bold">University of Manitoba (2025)</div>
-                        <div className="fs-5">BSc. in Computer Science (co-op), minor in Mathematics</div>
+                        <div className="fs-5 fw-bold">University of Manitoba (2025)</div>
+                        <div className="fs-6">BSc. in Computer Science (co-op), minor in Mathematics</div>
                     </span>
                 </div>
             </Row>
