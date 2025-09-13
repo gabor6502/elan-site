@@ -11,9 +11,6 @@ export default function About()
 
     return(<>
         <Container >
-            {/*<WorkHistory />
-            <Education />
-            <Personal />*/}
             <Row>
                 <Col >
                     <WorkHistory />
@@ -23,9 +20,6 @@ export default function About()
                     <Personal />
                 </Col>
             </Row>
-            
-            
-            
             
             <Outlet />
         </Container>

@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 
 import Bio from "../components/Home/Bio"
-//import ProjectShowcase from "../components/Home/ProjectShowcase"
 import Projects from "../components/Projects/Projects"
 export default function Home()
 {
@@ -9,6 +8,6 @@ export default function Home()
 
     return (<>
         <Bio />
-       <Projects />
+        <Projects />
     </>)
 }

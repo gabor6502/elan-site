@@ -13,7 +13,7 @@ export default function Contact()
                 <span className="fs-1 fw-bold">Hmu!</span>
                 <p>Want to reach out to discuss emploment opportunities, my projects, or just say hi? Feel free to contact me below:</p>
             </Row>
-
+            
             <ContactForm />
 
             <Outlet />

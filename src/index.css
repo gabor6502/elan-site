@@ -267,3 +267,64 @@ body
 {
    margin-left: 10px;
 }
+
+#elanPicsContainer
+{
+   background: rgba(256,256,256, 0.5);
+   backdrop-filter: blur(2px);
+
+   border-radius: 5px;
+   padding: 15px;
+
+   display: flex;
+
+   overflow-x: hidden;
+   justify-content: center;
+
+   /*width: min-content;*/
+   width: 95%;
+   height: 225px;
+   align-self: center;
+}
+
+@keyframes imageFade
+{
+     0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+   100% {opacity: 0;}
+}
+
+.elanPic
+{
+   max-width: 200px;
+   max-height: 200px;
+
+   animation-name: imageFade;
+   animation-iteration-count: infinite;
+   animation-duration: 12s;
+
+   position: absolute;
+
+}
+
+#fade1
+{
+   animation-delay: 0s;
+}
+
+#fade2
+{
+   animation-delay: -3s;
+}
+
+#fade3
+{
+   animation-delay: -6s;
+}
+
+#fade4
+{
+   animation-delay: -9s;
+}
