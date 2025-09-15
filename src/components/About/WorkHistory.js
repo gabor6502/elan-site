@@ -11,9 +11,9 @@ export default function WorkHistory()
                 <div>
                     <ul>
                         <li>Developed back-end REST applications in Java Spring, Express.js and NestJS (containerizing the latter two with Podman) to help facilitate the delivery of a key government program.</li>
-                        <li>Secured each endpoint with an implementation of Role-based Access Control in Spring and Typescript to ensure that only authorized users could access the services the app would provide.</li>
-                        <li>Wrote comprehensive unit and integration tests to guarantee proper functionality of all applications.</li>
-                        <li>Created a React.js application prototype that provided executives with a visualization of a future product.</li>
+                        <li>Secured each endpoint with by implementing of Role-based Access Control in Spring and Typescript, to ensure that only authorized users could access the services the app would provide.</li>
+                        <li>Wrote and ran comprehensive unit and integration tests to guarantee proper functionality of all applications.</li>
+                        <li>Programmed a React.js application that provided executives with a visualization of a future product.</li>
                     </ul>
                 </div>
             </Row>
@@ -22,8 +22,8 @@ export default function WorkHistory()
                 <span className="fs-4 fw-bold">Manitoba Hydro International (Fall 2023)</span>
                 <div>
                     <ul>
-                        <li>Developed a user-prediction feature with C++ and Windows MFC/AFX for PSCAD, a power systems/electrical circuitry CAD application.</li>
-                        <li>Resolved scope creep that the development of said feature caused, by engineering optimal algorithms and procedures needed, notably an algorithm to find all possible placements an electrical component could fit within a circuit diagram.</li>
+                        <li>Led development of a user-prediction feature for PSCAD, a power systems/electrical circuitry CAD application, written with C++, that would make it faster and easier for users to design circuits.</li>
+                        <li>Engineered optimal algorithms and procedures needed, such as an algorithm to find all possible placements an electrical component could fit within a circuit diagram, to ensure the feature would run quickly and correctly.</li>
                         <li>Updated the team in biweekly meetings and formally presented the feature to an internal company audience.</li>
                     </ul>
                 </div>

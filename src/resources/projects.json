@@ -7,11 +7,11 @@
         "technicalPoints": ["Created a supersampling algorithm to enahnce image quality.", "Developed a preview window to bypass render times, so the user can explore fractals more efficiently.", "Minimal GUI created to allow user to select colour schemes and fractal types."]
     },
     {
-        "name":"Collections",
-        "repository": [{"Backend":"https://github.com/gabor6502/collections_spring_backend"}],
-        "headline": "A web app to help users manage their collections of physical things, like books, CDs, other collectables, and share them with others.",
-        "techStack": ["Angular", "Spring", "Junit", "PostgreSQL"],
-        "technicalPoints": ["Modeling data to allow for user customization while not being too specific nor too general.", "Choosing a balance between storing certain data attributes or relying on querires to fetch specific information."]
+        "name":"GRX",
+        "repository": [{"Demo Repo":"https://github.com/gabor6502/GRX-demo"}, {"Mobile": "https://github.com/gabor6502/GRX-mobile"}, {"Reciept Reader": "https://github.com/gabor6502/GRX-receipt-reader"}, {"Backend": "https://github.com/gabor6502/GRX-backend"}],
+        "headline": "An application that manages grocery lists, to allow for individuals and families to collaborate on lists, track costs, save money.",
+        "techStack": ["Flutter", "Opencv", "Android", "ios", "Spring", "Junit", "PostgreSQL"],
+        "technicalPoints": ["Using Opencv to read receipts from purchases, allowing effortless tracking of a grocery run's cost.", "Backend used to store account data and user lists, which facilitates collaborative features between users."]
     },
     {
         "name":"Website + Contact Manager",
@@ -21,24 +21,10 @@
         "technicalPoints": ["Contains contact page to allow direct contact with me via email.", "Built a backend to facilitate SMTP of emails and keep mail under alloted quota."]
     },
     {
-        "name":"Daemon",
-        "repository": [{"Repo":"https://github.com/gabor6502/daemon-helper"}],
-        "headline": "A linux background process/daemon that acts as a personal assistant, managing emails, calendar dates, etc.",
-        "techStack": ["C", "Linux"],
-        "technicalPoints": ["Using LibCURL to make HTTP requests and parsing the JSON responses.", "Developing interaction to facilitate notifcations and event management."]
-    },
-    {
         "name":"CUDA Fractal 2D",
         "repository": [{"Repo":"https://github.com/gabor6502/cuda_fractal_2d"}],
         "headline": "A GPU accelerated version of the FractalViewerV2, with the goal of running in real time and eventually rendering 3D fractals also in real time.",
         "techStack": ["Cpp", "CUDA", "Opengl"],
         "technicalPoints": ["Writing CUDA kernels to run parallel tasks on the GPU that render fractals.", "Intergrating CUDA and Opengl to render and draw fractals all on the GPU."]
-    },
-    {
-        "name":"BF Interpreter",
-        "repository": [{"Repo":"https://github.com/gabor6502/bf"}],
-        "headline": "An interpreter/compiler system for the \"Brainfuck\" programming language.",
-        "techStack": ["C"],
-        "technicalPoints": ["Developing supports to directly run a program or run in a live interpreter.", "Adding options to customize memory size, both number of cells and max bytes stored in those cells."]
     }
 ]
