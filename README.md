@@ -1,12 +1,9 @@
 # Personal Website (React.js, Boostrap, Zustand)
 
-# Brief (under development)
-A personal website so show off projects, contact me, and tell a little about myself.
-
-# To run
-`npm run start`
+# Brief
+Development repo for a personal website that acts as a bio/portfolio for myself and facilitates contact requeests.
 
 # Tech Stack
-- React.js for the core html/js.
+- React.js for the core design and interactivity.
 - React Boostrap for additional layout support and CSS.
-- Zustand for state management, namely the projects section.
+- Zustand for manaing state, as project sections retrieves data from a JSON file.

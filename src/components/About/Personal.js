@@ -12,7 +12,7 @@ export default function Personal()
                 <Image id="fade3" className="elanPic" src={require("../../resources/pictures/about/me/guitar.jpg")}/>
                 <Image id="fade4" className="elanPic" src={require("../../resources/pictures/about/me/car.jpg")}/>
             </span>
-            <span className="mt-3">
+            <span className="mt-2">
                 <p>
                     My life outside tech is also exciting and rewarding! I used to run my own guitar teaching business and 
                     played in a band for a few years, where I also managed the Instagram and booked shows.  

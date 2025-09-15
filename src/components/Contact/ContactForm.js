@@ -74,7 +74,7 @@ export default function ContactForm()
     return(<>
         <Alert show={showSentAlert} variant={succAlert ? "success" : "danger"} onClose={() => setShowSentAlert(false)} dismissible>
             <Alert.Heading>
-                Message sent {succAlert ? "successfuly!" : "unsuccessfully."}
+                {succAlert ? "Message sent successfuly!" : "Failed to send message."}
             </Alert.Heading>
         </Alert>
         <Row className="p-2">
