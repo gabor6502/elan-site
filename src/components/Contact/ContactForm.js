@@ -36,26 +36,23 @@ export default function ContactForm()
     const handleSubmit = async (event) => 
     {
         const form = event.target
+        let inputs, formData, sendSuccess
+
+        // we want to show an alert after sending a message, and default submit behaviour prevents this as it reloads the page completely
+        event.preventDefault()
+        event.stopPropagation()
 
         if (!form.checkValidity()) 
         {
-            event.preventDefault()
-            event.stopPropagation()
-
             setValidated(true)
         }
         else
         {
             setSpinning(true)
 
-            // we want to show an alert after sending a message, and default submit behaviour prevents this as it reloads the page completely
-            event.preventDefault()
-            event.stopPropagation()
-
             // organize the fields and inputs in a dictionary to make calling the API easier
-            const inputs = event.target.querySelectorAll("input, textarea")
-            const formData = {}
-            let sendSuccess
+            inputs = event.target.querySelectorAll("input, textarea")
+            formData = {}
 
             inputs.forEach((input) => {formData[input.id] = input.value})
             inputs.forEach((input) => {input.value = ""}) // wipe since we're done collecting the data
@@ -82,13 +79,13 @@ export default function ContactForm()
                 <Row>
                     <Form.Group as={Col} controlId={FNAME_ID}>
                         <Form.Label>First Name</Form.Label>
-                        <Form.Control required type="text" pattern="[\w\-]+" placeholder="Enter your first name"/>
+                        <Form.Control required type="text" pattern="[\w\-\ ]+" placeholder="Enter your first name"/>
                         <Form.Control.Feedback type="invalid">Please enter your first name.</Form.Control.Feedback>
                     </Form.Group>
 
                     <Form.Group as={Col} controlId={LNAME_ID}>
                         <Form.Label>Last Name</Form.Label>
-                        <Form.Control required type="text" pattern="[\w\-]+" placeholder="Enter your last name"/>
+                        <Form.Control required type="text" pattern="[\w\-\ ]+" placeholder="Enter your last name"/>
                         <Form.Control.Feedback type="invalid">Please enter your last name.</Form.Control.Feedback>
                     </Form.Group>
 
