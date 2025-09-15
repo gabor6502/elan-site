@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button, Alert, Spinner } from "react-bootstrap"
-import sendMessage from "./ContactAPI"
 
 const FNAME_ID = "firstName"
 const LNAME_ID = "lastName"
@@ -36,37 +35,31 @@ export default function ContactForm()
     const handleSubmit = async (event) => 
     {
         const form = event.target
+        let inputs
+
+        event.preventDefault()
+        event.stopPropagation()
 
         if (!form.checkValidity()) 
         {
-            event.preventDefault()
-            event.stopPropagation()
-
             setValidated(true)
         }
         else
         {
             setSpinning(true)
+            setValidated(false)
 
-            // we want to show an alert after sending a message, and default submit behaviour prevents this as it reloads the page completely
-            event.preventDefault()
-            event.stopPropagation()
+            inputs = event.target.querySelectorAll("input, textarea")
 
-            // organize the fields and inputs in a dictionary to make calling the API easier
-            const inputs = event.target.querySelectorAll("input, textarea")
-            const formData = {}
-            let sendSuccess
+             // simulate what happens when it goes through
+            setTimeout(() => {
+                inputs.forEach((input) => {input.value = ""}) // wipe since we're done collecting the data
+                setContent("") // clears text area
 
-            inputs.forEach((input) => {formData[input.id] = input.value})
-            inputs.forEach((input) => {input.value = ""}) // wipe since we're done collecting the data
-            setContent("") // clears text area
-
-            sendSuccess = sendMessage(formData[FNAME_ID], formData[LNAME_ID], formData[EMAIL_ID], formData[MESSAGE_ID])
-
-            setSuccAlert(sendSuccess)
-            setShowSentAlert(true)
-            setValidated(false) // turns off validation decoration since we're done  with it
-            setSpinning(false)
+                setSpinning(false)
+                setShowSentAlert(true)
+                setSuccAlert(true) 
+            }, 750) // simulate a request
         }
     }
 
@@ -77,6 +70,15 @@ export default function ContactForm()
                 {succAlert ? "Message sent successfuly!" : "Failed to send message."}
             </Alert.Heading>
         </Alert>
+
+        <Row>
+            <p><i>
+                This is a pre-release build where the backend is going to be deployed very soon! 
+                For the time being messages will not be sent, 
+                however the form will behave as though messages have gone through.
+            </i></p>
+        </Row>
+        
         <Row className="p-2">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Row>
