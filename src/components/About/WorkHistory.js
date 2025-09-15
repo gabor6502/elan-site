@@ -11,7 +11,7 @@ export default function WorkHistory()
                 <div>
                     <ul>
                         <li>Developed back-end REST applications in Java Spring, Express.js and NestJS (containerizing the latter two with Podman) to help facilitate the delivery of a key government program.</li>
-                        <li>Secured each endpoint with by implementing of Role-based Access Control in Spring and Typescript, to ensure that only authorized users could access the services the app would provide.</li>
+                        <li>Secured each endpoint by implementing of Role-based Access Control in Spring and Typescript, to ensure that only authorized users could access the services the app would provide.</li>
                         <li>Wrote and ran comprehensive unit and integration tests to guarantee proper functionality of all applications.</li>
                         <li>Programmed a React.js application that provided executives with a visualization of a future product.</li>
                     </ul>
