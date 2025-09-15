@@ -67,7 +67,7 @@ export default function ContactForm()
     return(<>
         <Alert show={showSentAlert} variant={succAlert ? "success" : "danger"} onClose={() => setShowSentAlert(false)} dismissible>
             <Alert.Heading>
-                {succAlert ? "Message sent successfuly!" : "Failed to send message."}
+                {succAlert ? "Message sent successfully!" : "Failed to send message."}
             </Alert.Heading>
         </Alert>
 
@@ -84,13 +84,13 @@ export default function ContactForm()
                 <Row>
                     <Form.Group as={Col} controlId={FNAME_ID}>
                         <Form.Label>First Name</Form.Label>
-                        <Form.Control required type="text" pattern="[\w\-]+" placeholder="Enter your first name"/>
+                        <Form.Control required type="text" pattern="[\w\-\ ]+" placeholder="Enter your first name"/>
                         <Form.Control.Feedback type="invalid">Please enter your first name.</Form.Control.Feedback>
                     </Form.Group>
 
                     <Form.Group as={Col} controlId={LNAME_ID}>
                         <Form.Label>Last Name</Form.Label>
-                        <Form.Control required type="text" pattern="[\w\-]+" placeholder="Enter your last name"/>
+                        <Form.Control required type="text" pattern="[\w\-\ ]+" placeholder="Enter your last name"/>
                         <Form.Control.Feedback type="invalid">Please enter your last name.</Form.Control.Feedback>
                     </Form.Group>
 
