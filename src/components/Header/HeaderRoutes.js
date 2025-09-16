@@ -8,9 +8,9 @@ export default function HeaderRoutes()
 {
     return (<>
         <Routes>
-            <Route exact path="elan-site/" element={<Home />} />
-            <Route exact path="elan-site/about" element={<About />} />
-            <Route exact path="elan-site/contact" element={<Contact /> } />
+            <Route exact path="/elan-site/" element={<Home />} />
+            <Route exact path="/elan-site/about" element={<About />} />
+            <Route exact path="/elan-site/contact" element={<Contact /> } />
         </Routes>
     </>)
 }
