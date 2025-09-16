@@ -13,9 +13,9 @@ export default function Bio()
                     <Image id="homeElanImg" rounded style={{width: 200, height: 200, "margin-right": "15px"}} src={require("../../resources/pictures/sitepfp.jpg")} alt="A picture of me"/>
                     <span>
                         <p>
-                            My name is Elan, and I am a recent graduate of computer science from the University of Manitoba, with a minor in mathematics. 
+                            My name is Elan, and I am a recent graduate of computer science from the University of Manitoba with a minor in mathematics. 
                             I have 12 months of professional software development experience through my university's co-op program,
-                            where I had the chance to work with C/C++, Grails, NestJS, Node.js, React.js, and Spring. Aside from my co-op placements, I have 
+                            where I had the chance to work with C/C++, Node, React, and Spring. Aside from my co-op placements, I have 
                             been programming and learning computer science for 10+ years, and continue to learn through various personal projects. 
                         </p>
                         <p>
