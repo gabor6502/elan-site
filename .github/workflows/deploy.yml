@@ -3,13 +3,10 @@ name: GitHub Pages Deployment
 on:
     push:
         branches:
-            [pre_deploy]
+            - pre_deploy
 
-# needs proper permission to write to github pages
 permissions:
-    contents: read
-    pages: write
-    id-token: write
+  contents: write
 
 jobs:
     build_and_deploy:
@@ -21,7 +18,7 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v5
               with:
-                node-version: 22
+                node-version: '22'
 
             - name: Install Dependencies
               run: npm ci
@@ -29,9 +26,10 @@ jobs:
             - name: Build
               run: npm run build
 
-            - name: Deploy with gh-pages
-              run: |
-                git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-                npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-              env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Deploy to a new branch with contents as build
+              uses: JamesIves/github-pages-deploy@v4
+              with:
+                folder: build
+                branch: gh-pages
+
+              
