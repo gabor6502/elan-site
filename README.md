@@ -2,7 +2,7 @@
 
 ## Branches
 - `main`: the intended release for prod
-- `pre_release`: while the backend is being tested and deployed, the contact feature is disabled. A build of the static website is then deployed to github pages.
+- `pre_release`: while the backend is being tested and deployed, the contact feature is disabled. A build of the static website is then deployed to github pages. See workflows for more info.
 
 ## Brief
 Development repo for a personal website that acts as a bio/portfolio for myself and facilitates contact requests.
