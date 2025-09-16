@@ -1,4 +1,4 @@
-name: "Deploy React.js website to github pages"
+run-name: "Deploy React.js website to github pages"
 
 on:
     push:
