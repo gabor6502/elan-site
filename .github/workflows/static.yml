@@ -5,7 +5,10 @@ on:
         branches:
             - pre_deploy
 
+
 jobs:
+
+
     my-job:
         name: My Job
         runs-on: ubuntu-latest
@@ -54,6 +57,7 @@ jobs:
     #         url: ${{ steps.deployment.outputs.page_url }}
     #     needs: build
     #     permissions:
+    #         contents: read
     #         pages: write
     #         id-token: write            
     #     runs-on: ubuntu-latest
