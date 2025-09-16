@@ -1,8 +1,8 @@
 # Personal Website (React.js, Boostrap, Zustand)
 
-## Branches
-- `main`: the intended release for prod
-- `pre_release`: while the backend is being tested and deployed, the contact feature is disabled. A build of the static website is then deployed to github pages. See workflows for more info.
+## Branch note
+This is a build of the static site intended for github pages. While the backend is being tested and deployed, the contact feature is disabled.
+Future (i.e. very soon!) releases will not be using github pages.
 
 ## Brief
 Development repo for a personal website that acts as a bio/portfolio for myself and facilitates contact requests.

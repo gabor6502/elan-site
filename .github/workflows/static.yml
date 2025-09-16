@@ -1,7 +1,7 @@
 name: "Deploy React.js website to github pages"
 
 # Since this isn't the main branch, need to make this branch the default branch on github in settings
-# currently runs manually with `workflow_dispatch`, trying to figure out how to get the push to work
+# currently runs manually with `workflow_dispatch`, even though pre_deploy is default branch the push-branches-pre_deploy isn't running
 
 on: workflow_dispatch
    #push:
