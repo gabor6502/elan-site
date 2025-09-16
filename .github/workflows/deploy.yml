@@ -35,7 +35,7 @@ jobs:
     deploy:
         environment:
             name: pre_release
-            url: https://gabor6502.github.io/elan-site
+            url: ${{ steps.deployment.outputs.page_url }}
         needs: build
         permissions:
             contents: read
@@ -45,7 +45,5 @@ jobs:
         steps:
           - name: Deploy to GitHub Pages
             id: deployment
-            uses: actions/deploy-pages@v4
-            with:
-                token: ${{ secrets.GITHUB_TOKEN }}
+            uses: actions/deploy-pages@v3
           
