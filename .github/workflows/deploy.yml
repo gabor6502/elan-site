@@ -1,4 +1,4 @@
-name: Deploy React.js website to github pages
+name: Build static site to be hosted on GitHub Pages
 
 on:
     push:
