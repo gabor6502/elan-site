@@ -1,29 +1,14 @@
 name: "Deploy React.js website to github pages"
 
 # Since this isn't the main branch, need to make this branch the default branch on github in settings
-# currently runs manually, trying to figure out how to get the push to work
+# currently runs manually with `workflow_dispatch`, trying to figure out how to get the push to work
 
-on: workflow_dispatch
-  # push:
-  #      branches:
-  #          - pre_deploy
-
+on: #workflow_dispatch
+   push:
+        branches:
+            - pre_deploy
 
 jobs:
-
-
-    my-job:
-        name: My Job
-        runs-on: ubuntu-latest
-        steps:
-        - name: Print a greeting
-          env:
-            MY_VAR: Hi there! My name is
-            FIRST_NAME: Mona
-            MIDDLE_NAME: The
-            LAST_NAME: Octocat
-          run: echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
-
     build:
         runs-on: ubuntu-latest
         steps:
@@ -36,12 +21,6 @@ jobs:
               with:
                 node-version: 22
                 cache: 'npm'
-
-            - name: Say hi
-              run: echo hi
-
-            - run: echo npm --version
-            - run: echo node --version
 
             - name: Install Dependencies and Build
               id: build
