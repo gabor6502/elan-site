@@ -22,7 +22,7 @@ jobs:
               id: build
               run: |
                 npm ci
-                npm run build
+                npm run build --verbose
 
             - name: Upload Artifact
               id: deployment
