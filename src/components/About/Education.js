@@ -6,7 +6,7 @@ export default function Education()
         <Container className="card">
             <span className="fs-2 fw-bold mb-1">Education</span>
             <Row>
-               <div className="educationEnty">
+               <div className="educationEntry">
                     <Image id="uofwLogo" className="educationIconBadge" src={require(`../../resources/pictures/about/education/uwclogo.png`)} alt="UW Logo"/>
                     <span className="educationContents">
                         <div className="fs-5 fw-bold">University of Winnipeg Collegiate (2018)</div>
@@ -15,7 +15,7 @@ export default function Education()
                 </div>
             </Row>
             <Row>
-                <div className="educationEnty">
+                <div className="educationEntry">
                     <Image id="uofmLogo" className="educationIconBadge" src={require(`../../resources/pictures/about/education/uofmlogo.png`)} alt="UM Logo"/>
                     <span className="educationContents">
                         <div className="fs-5 fw-bold">University of Manitoba (2025)</div>
