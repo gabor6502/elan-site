@@ -4,11 +4,11 @@
         "repository": [{"Repo":"https://github.com/gabor6502/Fractal-Generator"}],
         "headline": "A standalone application that renders the Mandelbrot Set and Burning Ship fractals.",
         "techStack": ["Java", "JOGL"],
-        "technicalPoints": ["Created a supersampling algorithm to enahnce image quality.", "Developed a preview window to bypass render times, so the user can explore fractals more efficiently.", "Minimal GUI created to allow user to select colour schemes and fractal types."]
+        "technicalPoints": ["Created a super-sampling algorithm to enhance image quality.", "Developed a preview window to bypass render times, so the user can explore fractals more efficiently.", "Minimal GUI created to allow user to select colour schemes and fractal types."]
     },
     {
         "name":"GRX",
-        "repository": [{"Demo Repo":"https://github.com/gabor6502/GRX-demo"}, {"Mobile": "https://github.com/gabor6502/GRX-mobile"}, {"Reciept Reader": "https://github.com/gabor6502/GRX-receipt-reader"}, {"Backend": "https://github.com/gabor6502/GRX-backend"}],
+        "repository": [{"Demo Repo":"https://github.com/gabor6502/GRX-demo"}, {"Mobile": "https://github.com/gabor6502/GRX-mobile"}, {"Receipt Reader": "https://github.com/gabor6502/GRX-receipt-reader"}, {"Backend": "https://github.com/gabor6502/GRX-backend"}],
         "headline": "An application that manages grocery lists, to allow for individuals and families to collaborate on lists, track costs, save money.",
         "techStack": ["Flutter", "Opencv", "Android", "ios", "Spring", "Junit", "PostgreSQL"],
         "technicalPoints": ["Using Opencv to read receipts from purchases, allowing effortless tracking of a grocery run's cost.", "Backend used to store account data and user lists, which facilitates collaborative features between users."]
@@ -25,6 +25,6 @@
         "repository": [{"Repo":"https://github.com/gabor6502/cuda_fractal_2d"}],
         "headline": "A GPU accelerated version of the FractalViewerV2, with the goal of running in real time and eventually rendering 3D fractals also in real time.",
         "techStack": ["Cpp", "CUDA", "Opengl"],
-        "technicalPoints": ["Writing CUDA kernels to run parallel tasks on the GPU that render fractals.", "Intergrating CUDA and Opengl to render and draw fractals all on the GPU."]
+        "technicalPoints": ["Writing CUDA kernels to run parallel tasks on the GPU that render fractals.", "Integrating CUDA and Opengl to render and draw fractals all on the GPU."]
     }
 ]

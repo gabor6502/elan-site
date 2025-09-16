@@ -15,7 +15,7 @@ export default function Personal()
             <span className="mt-2">
                 <p>
                     My life outside tech is also exciting and rewarding! I used to run my own guitar teaching business and 
-                    played in a band for a few years, where I also managed the Instagram and booked shows.  
+                    played in a band for a few years, managing its socials and booked shows as well. 
                     My friend and I also maintain our own cars which is a great way to learn systems beyond computer science. 
                     Some of my hobbies include guitar, biking, boxing, and every so often I fly in a Cessna!
                     I dog sit on the side too, which is a very rewarding responsibility.
