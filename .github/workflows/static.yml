@@ -37,7 +37,7 @@ jobs:
     deploy:
         environment:
             name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
+            url: "https://gabor6502.github.io/elan-site" #${{ steps.deployment.outputs.page_url }}
         needs: build
         permissions:
             contents: read
