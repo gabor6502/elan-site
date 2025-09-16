@@ -1,6 +1,6 @@
 {
   "name": "elan-site",
-  "homepage": "https://gabor6502.github.io/elan-site",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
