@@ -3,7 +3,7 @@ name: Build static site to be hosted on GitHub Pages
 on:
     push:
         branches:
-            - pre_deploy
+            [pre_deploy]
 
 # needs proper permission to write to github pages
 permissions:
