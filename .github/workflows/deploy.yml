@@ -1,4 +1,4 @@
-run-name: "Deploy React.js website to github pages"
+name: "Deploy React.js website to github pages"
 
 on:
     push:
@@ -6,6 +6,18 @@ on:
             - pre_deploy
 
 jobs:
+    my-job:
+        name: My Job
+        runs-on: ubuntu-latest
+        steps:
+        - name: Print a greeting
+          env:
+            MY_VAR: Hi there! My name is
+            FIRST_NAME: Mona
+            MIDDLE_NAME: The
+            LAST_NAME: Octocat
+          run: echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+
     build:
         runs-on: ubuntu-latest
         steps:
