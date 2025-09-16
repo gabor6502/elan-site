@@ -3,7 +3,7 @@ name: Deploy React.js website to github pages
 on:
     push:
         branches:
-            - pre_deploy
+            [pre_deploy]
 
 # needs proper permission to write to github pages
 permissions:
@@ -24,7 +24,7 @@ jobs:
                 node-version: 22
 
             - name: Install Dependencies
-              run: npm install
+              run: npm ci
 
             - name: Build
               run: npm run build
@@ -32,11 +32,11 @@ jobs:
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                name: "github-pages"
-                path: build
+                name: 'github-pages'
+                path: build/
 
             - name: Deploy to Github Pages
               uses: actions/deploy-pages@v4
               with:
                 token: ${{ secrets.GITHUB_TOKEN }}
-                artifact_name: "github-pages" 
+                artifact_name: 'github-pages' 
