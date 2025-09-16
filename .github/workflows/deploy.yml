@@ -17,12 +17,13 @@ jobs:
               uses: actions/setup-node@v5
               with:
                 node-version: 22
+                cache: 'npm'
             
             - name: Install Dependencies and Build
               id: build
               run: |
                 npm ci
-                npm run build --verbose
+                npm run build
 
             - name: Upload Artifact
               id: deployment
