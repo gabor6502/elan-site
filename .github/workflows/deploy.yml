@@ -6,22 +6,22 @@ on:
             - pre_deploy
 
 jobs:
-    dependencies:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Setup Node
-              uses: actions/setup-node@v5
-              with:
-                node-version: 22
-                cache: 'npm'
     build:
-        needs: dependencies
         runs-on: ubuntu-latest
         steps:
             
             - name: Checkout
               uses: actions/checkout@v5
-            
+
+            - name: Setup Node
+              uses: actions/setup-node@v5
+              with:
+                node-version: 22
+                cache: 'npm'
+
+            - run: npm --version
+            - run: node --version
+
             - name: Install Dependencies and Build
               run: |
                 npm ci
