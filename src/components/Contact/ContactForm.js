@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button, Alert, Spinner } from "react-bootstrap"
-import sendMessage from "./ContactAPI"
+import sendMessage, { HTTP_FORBIDDEN, HTTP_OK_RECORDED } from "./ContactAPI"
 
 const FNAME_ID = "firstName"
 const LNAME_ID = "lastName"
@@ -13,11 +13,12 @@ export default function ContactForm()
 {
     const [validated, setValidated] = useState(false)
     const [showSentAlert, setShowSentAlert] = useState(false)
-    const [succAlert, setSuccAlert] = useState(false)
     const [spinning, setSpinning] = useState(false)
 
     const [wordCount, setWordCount] = useState(0)
     const [content, setContent] = useState("")
+    const [code, setCode] = useState(0)
+
 
     const contentChange = (value) => 
     {
@@ -36,7 +37,7 @@ export default function ContactForm()
     const handleSubmit = async (event) => 
     {
         const form = event.target
-        let inputs, formData, sendSuccess
+        let inputs, formData, sendStatusCode
 
         // we want to show an alert after sending a message, and default submit behaviour prevents this as it reloads the page completely
         event.preventDefault()
@@ -58,20 +59,52 @@ export default function ContactForm()
             inputs.forEach((input) => {input.value = ""}) // wipe since we're done collecting the data
             setContent("") // clears text area
 
-            sendSuccess = sendMessage(formData[FNAME_ID], formData[LNAME_ID], formData[EMAIL_ID], formData[MESSAGE_ID])
+            sendStatusCode = await sendMessage(formData[FNAME_ID], formData[LNAME_ID], formData[EMAIL_ID], formData[MESSAGE_ID])
+            setCode(sendStatusCode)
 
-            setSuccAlert(sendSuccess)
             setShowSentAlert(true)
             setValidated(false) // turns off validation decoration since we're done  with it
             setSpinning(false)
         }
     }
 
+    const alertVariant = (codeSent) => 
+    {
+        console.log(codeSent)
+        if (codeSent === HTTP_OK_RECORDED)
+        {
+            return "success"
+        }
+        else if (codeSent === HTTP_FORBIDDEN)
+        {
+            return "warning"
+        }
+        else
+        {
+            return "danger"
+        }
+    }
+
+    const alertMessage = (codeSent) => 
+    {
+        if (codeSent === HTTP_OK_RECORDED)
+        {
+            return "Message sent successfully!"
+        }
+        else if (codeSent === HTTP_FORBIDDEN)
+        {
+            return "Please wait a few minutes before sending another message, thank you!"
+        }
+        else
+        {
+            return "Failed to send message."
+        }
+    }
 
     return(<>
-        <Alert show={showSentAlert} variant={succAlert ? "success" : "danger"} onClose={() => setShowSentAlert(false)} dismissible>
+        <Alert show={showSentAlert} variant={alertVariant(code)} onClose={() => setShowSentAlert(false)} dismissible>
             <Alert.Heading>
-                {succAlert ? "Message sent successfully!" : "Failed to send message."}
+                {alertMessage(code)}
             </Alert.Heading>
         </Alert>
         <Row className="p-2">
@@ -79,13 +112,13 @@ export default function ContactForm()
                 <Row>
                     <Form.Group as={Col} controlId={FNAME_ID}>
                         <Form.Label>First Name</Form.Label>
-                        <Form.Control required type="text" pattern="[\w\-\ ]+" placeholder="Enter your first name"/>
+                        <Form.Control required type="text" pattern="[\w\-]+" placeholder="Enter your first name"/>
                         <Form.Control.Feedback type="invalid">Please enter your first name.</Form.Control.Feedback>
                     </Form.Group>
 
                     <Form.Group as={Col} controlId={LNAME_ID}>
                         <Form.Label>Last Name</Form.Label>
-                        <Form.Control required type="text" pattern="[\w\-\ ]+" placeholder="Enter your last name"/>
+                        <Form.Control required type="text" pattern="[\w\-]+" placeholder="Enter your last name"/>
                         <Form.Control.Feedback type="invalid">Please enter your last name.</Form.Control.Feedback>
                     </Form.Group>
 
