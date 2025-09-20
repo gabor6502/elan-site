@@ -8,7 +8,7 @@
     },
     {
         "name":"GRX",
-        "repository": [{"Demo Repo":"https://github.com/gabor6502/GRX-demo"}, {"Mobile": "https://github.com/gabor6502/GRX-mobile"}, {"Receipt Reader": "https://github.com/gabor6502/GRX-receipt-reader"}, {"Backend": "https://github.com/gabor6502/GRX-backend"}],
+        "repository": [{"Demo Repo (wip)":"https://github.com/gabor6502/GRX-demo"}],
         "headline": "An application that manages grocery lists, to allow for individuals and families to collaborate on lists, track costs, save money.",
         "techStack": ["Flutter", "Opencv", "Android", "ios", "Spring", "Junit", "PostgreSQL"],
         "technicalPoints": ["Using Opencv to read receipts from purchases, allowing effortless tracking of a grocery run's cost.", "Backend used to store account data and user lists, which facilitates collaborative features between users."]
