@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button, Alert, Spinner } from "react-bootstrap"
-import sendMessage, { HTTP_FORBIDDEN, HTTP_OK_RECORDED } from "./ContactAPI"
+import { HTTP_FORBIDDEN, HTTP_OK_RECORDED } from "./ContactAPI"
 
 const FNAME_ID = "firstName"
 const LNAME_ID = "lastName"
