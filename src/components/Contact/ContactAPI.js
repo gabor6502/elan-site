@@ -12,7 +12,7 @@ export default async function sendMessage(firstName, lastName, email, message)
 
     try
     {
-        response = await axios.post("http://localhost:7000/send/", request, 
+        response = await axios.post(process.env.API_LINK, request, 
                         {
                             headers: { "Content-Type": "application/json"}
                         })
