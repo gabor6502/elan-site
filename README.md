@@ -2,7 +2,7 @@
 
 ## Branch note
 This is a build of the static site intended for github pages. While the backend is being tested and deployed, the contact feature is disabled.
-Future (i.e. very soon!) releases will not be using github pages.
+Future (i.e. very soon!) releases will not be using github pages. You can view the `main` branch instead to see the up to date version, however the production deployment will be in its own private repo to store `.env` and other configurations.
 
 ## Brief
 Development repo for a personal website that acts as a bio/portfolio for myself and facilitates contact requests.
