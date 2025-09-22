@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Row, Col, Form, InputGroup, Button, Alert, Spinner } from "react-bootstrap"
+import sendMessage, { HTTP_FORBIDDEN, HTTP_OK_RECORDED } from "./ContactAPI"
 
 const FNAME_ID = "firstName"
 const LNAME_ID = "lastName"
@@ -12,11 +13,11 @@ export default function ContactForm()
 {
     const [validated, setValidated] = useState(false)
     const [showSentAlert, setShowSentAlert] = useState(false)
-    const [succAlert, setSuccAlert] = useState(false)
     const [spinning, setSpinning] = useState(false)
 
     const [wordCount, setWordCount] = useState(0)
     const [content, setContent] = useState("")
+    const [code, setCode] = useState(0)
 
     const contentChange = (value) => 
     {
@@ -58,16 +59,48 @@ export default function ContactForm()
 
                 setSpinning(false)
                 setShowSentAlert(true)
-                setSuccAlert(true) 
+                setCode(201) 
             }, 750) // simulate a request
         }
     }
 
+     const alertVariant = (codeSent) => 
+    {
+        console.log(codeSent)
+        if (codeSent === HTTP_OK_RECORDED)
+        {
+            return "success"
+        }
+        else if (codeSent === HTTP_FORBIDDEN)
+        {
+            return "warning"
+        }
+        else
+        {
+            return "danger"
+        }
+    }
+
+    const alertMessage = (codeSent) => 
+    {
+        if (codeSent === HTTP_OK_RECORDED)
+        {
+            return "Message sent successfully!"
+        }
+        else if (codeSent === HTTP_FORBIDDEN)
+        {
+            return "Please wait a few minutes before sending another message, thank you!"
+        }
+        else
+        {
+            return "Failed to send message."
+        }
+    }
 
     return(<>
-        <Alert show={showSentAlert} variant={succAlert ? "success" : "danger"} onClose={() => setShowSentAlert(false)} dismissible>
+        <Alert show={showSentAlert} variant={alertVariant(code)} onClose={() => setShowSentAlert(false)} dismissible>
             <Alert.Heading>
-                {succAlert ? "Message sent successfully!" : "Failed to send message."}
+                {alertMessage(code)}
             </Alert.Heading>
         </Alert>
 

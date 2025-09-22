@@ -1,8 +1,27 @@
+import axios from "axios"
 
-export default function sendMessage(firstName, lastName, email, message)
+// http status codes
+export const HTTP_OK_RECORDED = 201
+export const HTTP_FORBIDDEN = 403
+export const HTTP_SERVER_ERROR = 500
+
+export default async function sendMessage(firstName, lastName, email, message)
 {
-    
-    // TODO: link with custom backend
+    let statusCode, response
+    let request = {"firstName": firstName, "lastName": lastName, "emailAddress": email, "message": message}
 
-    return false
+    try
+    {
+        response = await axios.post(process.env.API_LINK, request, 
+                        {
+                            headers: { "Content-Type": "application/json"}
+                        })
+
+        statusCode = response.status
+    } catch(error)
+    {
+        statusCode = error.status
+    }
+    
+    return statusCode
 }
